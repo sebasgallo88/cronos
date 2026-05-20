@@ -13,8 +13,7 @@ religion_dominant:
 predecessors:
   - republica-romana
 successors:
-  - imperio-romano-oriental
-  - reinos-germanicos
+  - imperio-bizantino
 color: "#8B0000"
 tags:
   - imperio
@@ -47,4 +46,4 @@ La religión tradicional romana —politeísmo cívico— coexistió con cultos 
 
 ## Sucesores territoriales
 
-La caída del 476 marca el fin de la línea imperial en Occidente, pero el Imperio Romano de Oriente (Bizancio) se considera continuidad institucional hasta 1453. Los reinos germánicos (visigodos, ostrogodos, francos, vándalos) se asentaron sobre territorios romanos manteniendo formas administrativas latinas.
+La caída del 476 marca el fin de la línea imperial en Occidente, pero el [Imperio Bizantino](../imperio-bizantino) se considera continuidad institucional hasta 1453. Los reinos germánicos (visigodos, ostrogodos, francos, vándalos) se asentaron sobre territorios romanos manteniendo formas administrativas latinas; no se incluyen como polities separadas en v1.
