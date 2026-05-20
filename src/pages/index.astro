@@ -16,7 +16,26 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="author" content="Sebastián Gallo" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://cronos.sebastiangallo.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cronos.sebastiangallo.com/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://cronos.sebastiangallo.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://cronos.sebastiangallo.com/og-image.png" />
+
     <title>{title}</title>
     <style is:global>
       :root {
@@ -174,9 +193,17 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
       .filter-group label {
         display: flex;
         align-items: center;
-        gap: 0.4rem;
+        gap: 0.5rem;
         cursor: pointer;
         font-size: 0.82rem;
+        min-height: 24px;
+        padding: 2px 0;
+      }
+      .filter-group input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        flex-shrink: 0;
       }
       .color-swatch {
         display: inline-block;
@@ -406,6 +433,8 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
         · rango {time_range[0]} → {time_range[1]}
       </div>
     </header>
-    <HistomapApp data={cronos} client:only="react" />
+    <main id="main" aria-label="Cronos histomap">
+      <HistomapApp data={cronos} client:only="react" />
+    </main>
   </body>
 </html>

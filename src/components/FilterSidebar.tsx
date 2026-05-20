@@ -115,9 +115,11 @@ export default function FilterSidebar({ data, filters, onChange, onReset }: Prop
         <summary>Era</summary>
         <div className="era-range">
           <div className="era-row">
-            <label>Desde</label>
+            <label htmlFor="era-start">Desde</label>
             <input
+              id="era-start"
               type="range"
+              aria-label="Año de inicio del rango temporal visible"
               min={domainLo}
               max={domainHi}
               step={50}
@@ -127,9 +129,11 @@ export default function FilterSidebar({ data, filters, onChange, onReset }: Prop
             <span className="era-val">{eraLo < 0 ? `${Math.abs(eraLo)} BCE` : `${eraLo}`}</span>
           </div>
           <div className="era-row">
-            <label>Hasta</label>
+            <label htmlFor="era-end">Hasta</label>
             <input
+              id="era-end"
               type="range"
+              aria-label="Año final del rango temporal visible"
               min={domainLo}
               max={domainHi}
               step={50}

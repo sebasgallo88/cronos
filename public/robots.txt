@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cronos.sebastiangallo.com/sitemap.xml
