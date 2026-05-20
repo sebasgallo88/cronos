@@ -13,16 +13,14 @@
     "ingest:cliopatria": "node scripts/ingest-cliopatria.mjs",
     "ingest:wikidata": "node scripts/ingest-wikidata.mjs",
     "ingest:seshat": "node scripts/ingest-seshat.mjs",
-    "preview": "npm run build && wrangler dev",
-    "astro": "astro",
-    "deploy": "npm run build && wrangler deploy",
-    "cf-typegen": "wrangler types"
+    "preview": "astro preview",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name cronos --branch main",
+    "astro": "astro"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=20.0.0"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "11",
     "@astrojs/react": "^3.6.3",
     "astro": "^4.16.18",
     "d3-array": "^3.2.4",
