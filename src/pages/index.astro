@@ -479,8 +479,9 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
         <p class="subtitle">{description}</p>
       </div>
       <div class="stats">
-        <span class="status-badge">F8 multi-lane + filtros</span>
+        <span class="status-badge">v2 · brush + narrativas</span>
         {polity_count}p · {religion_count}r · {figure_count}f · {event_count}e
+        {cronos.narratives ? ` · ${cronos.narratives.length}n` : ''}
         · rango {time_range[0]} → {time_range[1]}
       </div>
     </header>
