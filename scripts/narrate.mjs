@@ -304,13 +304,19 @@ function writeNarrativeMd(period, body, slice, audioMeta) {
   fmLines.push(`audio_word_count: ${wordCount}`);
   fmLines.push(`generated_at: '${today}'`);
   fmLines.push(`generated_by: ${FLAGS.model}`);
+  // Arrays vacíos en YAML inline para evitar el null-parsing
+  const emitArr = (label, ids) => {
+    if (!ids.length) {
+      fmLines.push(`  ${label}: []`);
+    } else {
+      fmLines.push(`  ${label}:`);
+      for (const id of ids) fmLines.push(`    - ${id}`);
+    }
+  };
   fmLines.push(`sources_used:`);
-  fmLines.push(`  polity_ids:`);
-  for (const id of polityIds) fmLines.push(`    - ${id}`);
-  fmLines.push(`  event_ids:`);
-  for (const id of eventIds) fmLines.push(`    - ${id}`);
-  fmLines.push(`  figure_ids:`);
-  for (const id of figureIds) fmLines.push(`    - ${id}`);
+  emitArr('polity_ids', polityIds);
+  emitArr('event_ids', eventIds);
+  emitArr('figure_ids', figureIds);
   fmLines.push('---');
 
   const md = `${fmLines.join('\n')}\n\n${body.trim()}\n`;

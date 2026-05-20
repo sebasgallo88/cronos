@@ -69,9 +69,10 @@ const schemas = {
         type: 'object',
         additionalProperties: false,
         properties: {
-          polity_ids: { type: 'array', items: { type: 'string', pattern: idPattern } },
-          event_ids: { type: 'array', items: { type: 'string', pattern: idPattern } },
-          figure_ids: { type: 'array', items: { type: 'string', pattern: idPattern } },
+          // null aceptado porque YAML parsea "event_ids:" (sin items) como null
+          polity_ids: { anyOf: [{ type: 'array', items: { type: 'string', pattern: idPattern } }, { type: 'null' }] },
+          event_ids:  { anyOf: [{ type: 'array', items: { type: 'string', pattern: idPattern } }, { type: 'null' }] },
+          figure_ids: { anyOf: [{ type: 'array', items: { type: 'string', pattern: idPattern } }, { type: 'null' }] },
         },
       },
     },
