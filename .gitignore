@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Cache
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cronos-specific
+# _sources/ contiene cache de Cliopatria/Wikidata/Seshat
+# (committed sería bandwidth alto; los scripts ingest:* lo regeneran)
+_sources/
+
+# Build artifact: cronos.json se regenera con `npm run build-data` o `npm run build`.
+# Markdown en content/ es source of truth; el JSON nunca se edita a mano.
+src/data/cronos.json

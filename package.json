@@ -1,0 +1,48 @@
+{
+  "name": "cronos",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Histomap interactivo de la historia humana — civilizaciones, religiones, figuras y eventos en lanes paralelas.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate && npm run build-data && astro build",
+    "build-data": "node scripts/build-data.mjs",
+    "validate": "node scripts/validate-frontmatter.mjs",
+    "lint-balance": "node scripts/lint-balance.mjs",
+    "ingest:cliopatria": "node scripts/ingest-cliopatria.mjs",
+    "ingest:wikidata": "node scripts/ingest-wikidata.mjs",
+    "ingest:seshat": "node scripts/ingest-seshat.mjs",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.6.3",
+    "astro": "^4.16.18",
+    "d3-array": "^3.2.4",
+    "d3-axis": "^3.0.0",
+    "d3-scale": "^4.0.2",
+    "d3-selection": "^3.0.0",
+    "d3-zoom": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/d3-array": "^3.2.1",
+    "@types/d3-axis": "^3.0.6",
+    "@types/d3-scale": "^4.0.8",
+    "@types/d3-selection": "^3.0.10",
+    "@types/d3-zoom": "^3.0.8",
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^14.1.4",
+    "typescript": "^5.6.3"
+  }
+}
