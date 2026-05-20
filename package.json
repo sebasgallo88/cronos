@@ -13,13 +13,16 @@
     "ingest:cliopatria": "node scripts/ingest-cliopatria.mjs",
     "ingest:wikidata": "node scripts/ingest-wikidata.mjs",
     "ingest:seshat": "node scripts/ingest-seshat.mjs",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "npm run build && wrangler dev",
+    "astro": "astro",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "engines": {
     "node": ">=20.0.0"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "11",
     "@astrojs/react": "^3.6.3",
     "astro": "^4.16.18",
     "d3-array": "^3.2.4",
@@ -43,6 +46,7 @@
     "ajv-formats": "^3.0.1",
     "gray-matter": "^4.0.3",
     "marked": "^14.1.4",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "wrangler": "^4.93.0"
   }
 }

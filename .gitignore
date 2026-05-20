@@ -35,3 +35,8 @@ _sources/
 # Build artifact: cronos.json se regenera con `npm run build-data` o `npm run build`.
 # Markdown en content/ es source of truth; el JSON nunca se edita a mano.
 src/data/cronos.json
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
