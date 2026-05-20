@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { axisTop } from 'd3-axis';
 import { select } from 'd3-selection';
 import { zoom, type ZoomBehavior } from 'd3-zoom';
+import { brushX, type BrushBehavior } from 'd3-brush';
 import { createTimeScale, formatYear, smartTicks } from '../lib/timeScale';
 import { computeLayout, LANE_HEIGHT, RELIGION_BAND_HEIGHT, TOP_MARGIN, type RegionMeta } from '../lib/laneLayout';
 import {
@@ -11,6 +12,7 @@ import {
   filterReligions,
   type FilterState,
 } from '../lib/filters';
+import { findClosestNarrative, type SnapResult } from '../lib/narrativeIndex';
 import type { CronosData, EventCategory, FigureRole, HistoricalEvent, Figure } from '../lib/dataTypes';
 
 interface Props {
@@ -47,6 +49,8 @@ export default function HistomapCanvas({ data, filters, collapsedRegions, onTogg
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(1200);
+  const [brushSnap, setBrushSnap] = useState<SnapResult | null>(null);
+  const [brushPixels, setBrushPixels] = useState<[number, number] | null>(null);
 
   const regionsMeta: RegionMeta[] = useMemo(
     () => data.regions.map((r) => ({ id: r.id, name: r.name, order: r.order })),
@@ -300,6 +304,52 @@ export default function HistomapCanvas({ data, filters, collapsedRegions, onTogg
       .append('title')
       .text((e) => `${e.name} (${formatYear(e.year)}) · ${e.category}`);
 
+    // ── d3-brush: selección de rango temporal para narrativas ──
+    const narratives = data.narratives ?? [];
+    let brushG: ReturnType<typeof root.append> | null = null;
+    let currentBrushBehavior: BrushBehavior<unknown> | null = null;
+    if (narratives.length > 0) {
+      brushG = root.append('g').attr('class', 'time-brush');
+
+      const onBrushEnd = (event: any, currentScale: typeof baseScale) => {
+        const selection = event.selection as [number, number] | null;
+        if (!selection) {
+          setBrushSnap(null);
+          setBrushPixels(null);
+          return;
+        }
+        const [px0, px1] = selection;
+        if (Math.abs(px1 - px0) < 8) {
+          // brush demasiado chico → tratamos como click, sin acción
+          brushG?.call(currentBrushBehavior!.move as any, null);
+          setBrushSnap(null);
+          setBrushPixels(null);
+          return;
+        }
+        const yearStart = Math.round(currentScale.invert(px0));
+        const yearEnd = Math.round(currentScale.invert(px1));
+        const snap = findClosestNarrative(yearStart, yearEnd, narratives);
+        setBrushSnap(snap);
+        setBrushPixels([px0, px1]);
+      };
+
+      const makeBrush = (currentScale: typeof baseScale) => {
+        const b = brushX()
+          .extent([
+            [0, 0],
+            [innerWidth, 18],
+          ])
+          .on('end', (event) => onBrushEnd(event, currentScale));
+        return b;
+      };
+
+      currentBrushBehavior = makeBrush(baseScale);
+      brushG.call(currentBrushBehavior);
+      // Estilo del overlay (la "captura de clicks") — semi-transparente sobre el eje
+      brushG.select('.overlay').attr('fill', 'transparent').attr('cursor', 'crosshair');
+      brushG.selectAll('.selection').attr('fill', 'var(--accent)').attr('fill-opacity', 0.18).attr('stroke', 'var(--accent)').attr('stroke-width', 1);
+    }
+
     // ── d3-zoom: pan + zoom horizontal ──
     const xRescaleObservers: ((s: typeof baseScale) => void)[] = [
       renderAxis,
@@ -336,9 +386,20 @@ export default function HistomapCanvas({ data, filters, collapsedRegions, onTogg
 
     const zoomBehavior: ZoomBehavior<SVGSVGElement, unknown> = zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.5, 80])
+      .filter((event) => {
+        // No interferir con drags en el brush
+        const target = event.target as HTMLElement | null;
+        if (target?.closest?.('.time-brush')) return false;
+        // Mantener default: permitir wheel + drag normal del root
+        return !event.button && (event.type !== 'wheel' ? true : true);
+      })
       .on('zoom', (event) => {
         const newScale = event.transform.rescaleX(baseScale);
         for (const fn of xRescaleObservers) fn(newScale);
+        // Limpiar brush activo al zoomear (las coords cambian)
+        if (brushG) {
+          brushG.call((d3brush) => d3brush.select('.selection').attr('display', 'none'));
+        }
       });
 
     svg.call(zoomBehavior);
@@ -356,11 +417,33 @@ export default function HistomapCanvas({ data, filters, collapsedRegions, onTogg
     onToggleRegion,
   ]);
 
+  // Botón flotante "Explicar este período" cuando hay snap activo
+  const explainBtn = brushSnap && brushPixels ? (
+    <button
+      className="brush-explain-btn"
+      style={{
+        position: 'absolute',
+        left: MARGIN_LEFT + (brushPixels[0] + brushPixels[1]) / 2,
+        top: 4,
+        transform: 'translateX(-50%)',
+      }}
+      onClick={() => {
+        if (brushSnap && onSelect) {
+          onSelect({ type: 'narrative', id: brushSnap.narrative.id });
+        }
+      }}
+    >
+      Explicar período: {brushSnap.narrative.label}
+      {brushSnap.drift > 0 && <span className="brush-drift"> · snap {brushSnap.drift}a</span>}
+    </button>
+  ) : null;
+
   return (
     <div
       ref={containerRef}
       style={{
         width: '100%',
+        position: 'relative',
         background: 'var(--canvas-bg, #fafaf7)',
         border: '1px solid var(--border, #e4e4dd)',
         borderRadius: 8,
@@ -376,6 +459,7 @@ export default function HistomapCanvas({ data, filters, collapsedRegions, onTogg
       >
         <title>Cronos Histomap</title>
       </svg>
+      {explainBtn}
     </div>
   );
 }

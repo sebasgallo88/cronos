@@ -13,6 +13,9 @@
     "ingest:cliopatria": "node scripts/ingest-cliopatria.mjs",
     "ingest:wikidata": "node scripts/ingest-wikidata.mjs",
     "ingest:seshat": "node scripts/ingest-seshat.mjs",
+    "narrate:bake": "node scripts/narrate.mjs --all",
+    "narrate:custom": "node scripts/narrate.mjs --range",
+    "narrate:tts-only": "node scripts/narrate.mjs --tts-only",
     "preview": "astro preview",
     "deploy": "npm run build && wrangler pages deploy dist --project-name cronos --branch main",
     "astro": "astro"
@@ -22,9 +25,11 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.6.3",
+    "@types/d3-brush": "^3.0.6",
     "astro": "^4.16.18",
     "d3-array": "^3.2.4",
     "d3-axis": "^3.0.0",
+    "d3-brush": "^3.0.0",
     "d3-scale": "^4.0.2",
     "d3-selection": "^3.0.0",
     "d3-zoom": "^3.0.0",

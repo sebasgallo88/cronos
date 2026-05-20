@@ -3,13 +3,14 @@ import type {
   CronosData,
   HistoricalEvent,
   Figure,
+  Narrative,
   Polity,
   Religion,
 } from '../lib/dataTypes';
 import { formatYear } from '../lib/timeScale';
 
 export type SelectedEntity = {
-  type: 'polity' | 'religion' | 'figure' | 'event';
+  type: 'polity' | 'religion' | 'figure' | 'event' | 'narrative';
   id: string;
 };
 
@@ -23,7 +24,7 @@ interface Props {
 function lookupEntity(
   data: CronosData,
   sel: SelectedEntity,
-): Polity | Religion | Figure | HistoricalEvent | undefined {
+): Polity | Religion | Figure | HistoricalEvent | Narrative | undefined {
   switch (sel.type) {
     case 'polity':
       return data.polities.find((p) => p.id === sel.id);
@@ -33,6 +34,8 @@ function lookupEntity(
       return data.figures.find((f) => f.id === sel.id);
     case 'event':
       return data.events.find((e) => e.id === sel.id);
+    case 'narrative':
+      return data.narratives?.find((n) => n.id === sel.id);
   }
 }
 
@@ -66,6 +69,25 @@ export default function DetailPanel({ data, selected, onClose, onSelect }: Props
 
   // Meta line por tipo
   const metaLines: Array<{ label: string; value: React.ReactNode }> = [];
+  if (sel.type === 'narrative') {
+    const n = entity as Narrative;
+    metaLines.push({ label: 'Rango', value: <YearRange start={n.start_year} end={n.end_year} /> });
+    metaLines.push({ label: 'Duración', value: `${n.end_year - n.start_year} años` });
+    if (n.audio_duration_sec) {
+      const min = Math.floor(n.audio_duration_sec / 60);
+      const sec = Math.round(n.audio_duration_sec % 60);
+      metaLines.push({ label: 'Audio', value: `${min}:${String(sec).padStart(2, '0')} · voz ${n.audio_voice ?? '—'}` });
+    }
+    if (n.audio_word_count) metaLines.push({ label: 'Palabras', value: n.audio_word_count.toLocaleString('es') });
+    metaLines.push({ label: 'Generada', value: `${n.generated_at} · ${n.generated_by}` });
+    if (n.sources_used) {
+      const counts: string[] = [];
+      if (n.sources_used.polity_ids?.length) counts.push(`${n.sources_used.polity_ids.length}p`);
+      if (n.sources_used.event_ids?.length) counts.push(`${n.sources_used.event_ids.length}e`);
+      if (n.sources_used.figure_ids?.length) counts.push(`${n.sources_used.figure_ids.length}f`);
+      if (counts.length) metaLines.push({ label: 'Entidades usadas', value: counts.join(' · ') });
+    }
+  }
   if (sel.type === 'polity') {
     const p = entity as Polity;
     metaLines.push({ label: 'Macro-región', value: data.regions.find((r) => r.id === p.region)?.name ?? p.region });
@@ -167,6 +189,7 @@ export default function DetailPanel({ data, selected, onClose, onSelect }: Props
   // Cross-refs específicos
   const polity = sel.type === 'polity' ? (entity as Polity) : null;
   const religion = sel.type === 'religion' ? (entity as Religion) : null;
+  const narrative = sel.type === 'narrative' ? (entity as Narrative) : null;
 
   return (
     <>
@@ -192,8 +215,21 @@ export default function DetailPanel({ data, selected, onClose, onSelect }: Props
           ))}
         </dl>
 
+        {narrative?.audio_url && (
+          <div className="narrative-audio-block">
+            <audio
+              src={narrative.audio_url}
+              controls
+              preload="metadata"
+              className="narrative-audio"
+            >
+              Tu navegador no soporta el elemento audio HTML5.
+            </audio>
+          </div>
+        )}
+
         {entity.body_html && (
-          <div className="panel-body" dangerouslySetInnerHTML={{ __html: entity.body_html }} />
+          <div className={`panel-body ${narrative ? 'narrative-body' : ''}`} dangerouslySetInnerHTML={{ __html: entity.body_html }} />
         )}
 
         {polity && (polity.event_ids?.length || polity.figure_ids?.length) && (

@@ -56,7 +56,7 @@ function renderBodyHtml(body) {
 
 // ─── escanear ────────────────────────────────────────────────────────────
 
-const entities = { polity: [], religion: [], figure: [], event: [] };
+const entities = { polity: [], religion: [], figure: [], event: [], narrative: [] };
 
 for (const file of findMarkdownFiles(CONTENT_DIR)) {
   const { data, body } = readEntity(file);
@@ -137,6 +137,12 @@ for (const e of entities.event) {
   e.body_html = renderBodyHtml(e._body);
   delete e._body;
 }
+for (const n of entities.narrative) {
+  // Para narratives NO le quitamos el H1 inicial — las narrativas no llevan H1,
+  // arrancan directo con "## Al inicio del período". Pasamos el body completo.
+  n.body_html = n._body ? marked.parse(n._body.trim()).trim() : null;
+  delete n._body;
+}
 
 // ─── sort ────────────────────────────────────────────────────────────────
 
@@ -144,6 +150,7 @@ entities.polity.sort((a, b) => a.start_year - b.start_year);
 entities.religion.sort((a, b) => a.start_year - b.start_year);
 entities.figure.sort((a, b) => a.year_born - b.year_born);
 entities.event.sort((a, b) => a.year - b.year);
+entities.narrative.sort((a, b) => a.start_year - b.start_year);
 
 // ─── meta time_range ─────────────────────────────────────────────────────
 
@@ -171,6 +178,7 @@ const payload = {
     religion_count: entities.religion.length,
     figure_count: entities.figure.length,
     event_count: entities.event.length,
+    narrative_count: entities.narrative.length,
     time_range: [minYear, maxYear],
   },
   regions: REGIONS,
@@ -178,6 +186,7 @@ const payload = {
   religions: entities.religion,
   figures: entities.figure,
   events: entities.event,
+  narratives: entities.narrative,
 };
 
 // ─── write con minification condicional ──────────────────────────────────
@@ -196,7 +205,7 @@ const finalKB = (Buffer.byteLength(finalOutput, 'utf8') / 1024).toFixed(1);
 const c = payload.meta;
 console.log(
   `[build-data] wrote ${OUT_PATH.replace(REPO_ROOT + '/', '')}: ` +
-  `${c.polity_count}p + ${c.religion_count}r + ${c.figure_count}f + ${c.event_count}e ` +
+  `${c.polity_count}p + ${c.religion_count}r + ${c.figure_count}f + ${c.event_count}e + ${c.narrative_count}n ` +
   `(range ${c.time_range[0]} → ${c.time_range[1]}, ${finalKB} KB, ${useMinified ? 'minified' : 'pretty'})`
 );
 
@@ -206,6 +215,7 @@ const sizes = {
   religions: Buffer.byteLength(JSON.stringify(payload.religions), 'utf8'),
   figures: Buffer.byteLength(JSON.stringify(payload.figures), 'utf8'),
   events: Buffer.byteLength(JSON.stringify(payload.events), 'utf8'),
+  narratives: Buffer.byteLength(JSON.stringify(payload.narratives), 'utf8'),
 };
 const sortedSizes = Object.entries(sizes).sort((a, b) => b[1] - a[1]);
 console.log('[build-data] bytes por colección:');

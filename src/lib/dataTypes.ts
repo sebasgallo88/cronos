@@ -18,7 +18,7 @@ export type RegionId =
   | 'estepa'
   | 'americas';
 
-export type EntityType = 'polity' | 'religion' | 'figure' | 'event';
+export type EntityType = 'polity' | 'religion' | 'figure' | 'event' | 'narrative';
 
 export type FigureRole =
   | 'militar'
@@ -109,12 +109,33 @@ export interface HistoricalEvent extends BaseEntity {
   category: EventCategory;
 }
 
+export interface Narrative {
+  type: 'narrative';
+  id: string;
+  label: string;
+  start_year: number;
+  end_year: number;
+  audio_url?: string;
+  audio_duration_sec?: number | null;
+  audio_voice?: string;
+  audio_word_count?: number;
+  generated_at: string;
+  generated_by: string;
+  sources_used?: {
+    polity_ids?: string[];
+    event_ids?: string[];
+    figure_ids?: string[];
+  };
+  body_html: string | null;
+}
+
 export interface CronosMeta {
   generated_at: string;
   polity_count: number;
   religion_count: number;
   figure_count: number;
   event_count: number;
+  narrative_count?: number;
   time_range: [number, number];
 }
 
@@ -125,4 +146,5 @@ export interface CronosData {
   religions: Religion[];
   figures: Figure[];
   events: HistoricalEvent[];
+  narratives?: Narrative[];
 }

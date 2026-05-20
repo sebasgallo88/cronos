@@ -49,6 +49,33 @@ const commonFields = {
 };
 
 const schemas = {
+  narrative: {
+    type: 'object',
+    required: ['type', 'id', 'label', 'start_year', 'end_year', 'generated_at', 'generated_by'],
+    additionalProperties: false,
+    properties: {
+      type: { const: 'narrative' },
+      id: { type: 'string', pattern: idPattern, minLength: 1, maxLength: 80 },
+      label: { type: 'string', minLength: 1 },
+      start_year: { type: 'integer' },
+      end_year: { type: 'integer' },
+      audio_url: { type: 'string' },
+      audio_duration_sec: { type: ['integer', 'number', 'null'] },
+      audio_voice: { type: 'string' },
+      audio_word_count: { type: 'integer', minimum: 0 },
+      generated_at: { type: 'string', format: 'date' },
+      generated_by: { type: 'string' },
+      sources_used: {
+        type: 'object',
+        additionalProperties: false,
+        properties: {
+          polity_ids: { type: 'array', items: { type: 'string', pattern: idPattern } },
+          event_ids: { type: 'array', items: { type: 'string', pattern: idPattern } },
+          figure_ids: { type: 'array', items: { type: 'string', pattern: idPattern } },
+        },
+      },
+    },
+  },
   polity: {
     type: 'object',
     required: ['type', 'id', 'name', 'start_year', 'end_year', 'region', 'color', 'sources', 'created', 'updated'],
@@ -120,7 +147,7 @@ const validators = Object.fromEntries(
 
 const errors = [];
 const warnings = [];
-const entities = { polity: new Map(), religion: new Map(), figure: new Map(), event: new Map() };
+const entities = { polity: new Map(), religion: new Map(), figure: new Map(), event: new Map(), narrative: new Map() };
 
 function crossFieldErrors(type, data) {
   const errs = [];
@@ -135,6 +162,9 @@ function crossFieldErrors(type, data) {
   }
   if (type === 'religion' && data.end_year != null && data.start_year > data.end_year) {
     errs.push(`start_year (${data.start_year}) must be ≤ end_year (${data.end_year})`);
+  }
+  if (type === 'narrative' && data.start_year >= data.end_year) {
+    errs.push(`start_year (${data.start_year}) must be < end_year (${data.end_year})`);
   }
   return errs;
 }
