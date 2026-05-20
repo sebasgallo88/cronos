@@ -1,5 +1,5 @@
 ---
-import HistomapCanvas from '../components/HistomapCanvas.tsx';
+import HistomapApp from '../components/HistomapApp.tsx';
 import cronosRaw from '../data/cronos.json';
 import type { CronosData } from '../lib/dataTypes';
 
@@ -18,20 +18,23 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
-    <style>
+    <style is:global>
       :root {
         color-scheme: light dark;
         --bg: #fafaf7;
         --bg-elevated: #ffffff;
+        --canvas-bg: #fafaf7;
         --fg: #1a1a1a;
         --muted: #6b6b6b;
         --accent: #8b0000;
         --border: #e4e4dd;
+        --sidebar-width: 260px;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg: #1a1a1a;
+          --bg: #161616;
           --bg-elevated: #232323;
+          --canvas-bg: #f5f5f0;
           --fg: #fafaf7;
           --muted: #9a9a9a;
           --accent: #d97757;
@@ -46,8 +49,8 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
         color: var(--fg);
         line-height: 1.5;
       }
-      header {
-        padding: 1.25rem 1.5rem;
+      header.app-header {
+        padding: 0.85rem 1.25rem;
         border-bottom: 1px solid var(--border);
         display: flex;
         justify-content: space-between;
@@ -57,22 +60,18 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
       }
       h1 {
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         color: var(--accent);
       }
       .subtitle {
-        font-size: 0.9rem;
-        color: var(--muted);
-      }
-      .stats {
         font-size: 0.85rem;
         color: var(--muted);
-        font-variant-numeric: tabular-nums;
+        margin: 0.2rem 0 0 0;
       }
-      main {
-        padding: 1.25rem 1.5rem;
-        max-width: 1600px;
-        margin: 0 auto;
+      .stats {
+        font-size: 0.8rem;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
       }
       .status-badge {
         display: inline-block;
@@ -80,29 +79,156 @@ const description = 'Histomap interactivo de la historia humana — civilizacion
         background: var(--bg-elevated);
         border: 1px solid var(--border);
         border-radius: 999px;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         color: var(--muted);
+        margin-right: 0.5rem;
+      }
+
+      /* ── HistomapApp layout ── */
+      .histomap-app {
+        display: grid;
+        grid-template-columns: var(--sidebar-width) 1fr;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+        max-width: 1800px;
+        margin: 0 auto;
+        align-items: start;
+      }
+      .histomap-main {
+        min-width: 0;
+      }
+
+      /* ── FilterSidebar ── */
+      .filter-sidebar {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.85rem;
+        font-size: 0.9rem;
+        position: sticky;
+        top: 1rem;
+        max-height: calc(100vh - 2rem);
+        overflow-y: auto;
+      }
+      .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+      .sidebar-header h2 {
+        font-size: 0.95rem;
+        margin: 0;
+      }
+      .reset-btn {
+        background: transparent;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0.2rem 0.55rem;
+        font-size: 0.78rem;
+        color: var(--muted);
+        cursor: pointer;
+      }
+      .reset-btn:hover {
+        background: var(--bg);
+        color: var(--fg);
+      }
+      .filter-group {
+        border-top: 1px solid var(--border);
+        padding: 0.55rem 0;
+      }
+      .filter-group summary {
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 0.85rem;
+        list-style: none;
+        position: relative;
+        padding-left: 1.1rem;
+      }
+      .filter-group summary::-webkit-details-marker { display: none; }
+      .filter-group summary::before {
+        content: '▶';
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 0.7rem;
+        color: var(--muted);
+        transition: transform 0.15s ease;
+      }
+      .filter-group[open] summary::before {
+        transform: rotate(90deg);
+      }
+      .filter-group .count {
+        font-weight: 400;
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+      .filter-group ul {
+        margin: 0.4rem 0 0 0;
+        padding: 0;
+        list-style: none;
+      }
+      .filter-group li {
+        margin: 0.12rem 0;
+      }
+      .filter-group label {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        cursor: pointer;
+        font-size: 0.82rem;
+      }
+      .color-swatch {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+      .era-range {
+        margin-top: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+      .era-row {
+        display: grid;
+        grid-template-columns: 50px 1fr 70px;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: 0.78rem;
+      }
+      .era-row label { color: var(--muted); }
+      .era-row input[type="range"] { width: 100%; }
+      .era-row .era-val {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+        color: var(--fg);
+      }
+
+      @media (max-width: 900px) {
+        .histomap-app {
+          grid-template-columns: 1fr;
+        }
+        .filter-sidebar {
+          position: static;
+          max-height: none;
+        }
       }
     </style>
   </head>
   <body>
-    <header>
+    <header class="app-header">
       <div>
         <h1>Cronos</h1>
         <p class="subtitle">{description}</p>
       </div>
       <div class="stats">
-        <span class="status-badge">F7 v0 (single lane)</span>
+        <span class="status-badge">F8 multi-lane + filtros</span>
         {polity_count}p · {religion_count}r · {figure_count}f · {event_count}e
         · rango {time_range[0]} → {time_range[1]}
       </div>
     </header>
-    <main>
-      <HistomapCanvas data={cronos} client:visible />
-      <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--muted);">
-        Tip: rueda del mouse o pinch para zoom; click-drag horizontal para pan. F8 agregará lanes
-        para todos los polities con filtros por región / religión / tipo / era.
-      </p>
-    </main>
+    <HistomapApp data={cronos} client:only="react" />
   </body>
 </html>
