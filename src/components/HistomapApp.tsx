@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import HistomapCanvas from './HistomapCanvas';
 import FilterSidebar from './FilterSidebar';
+import DetailPanel, { type SelectedEntity } from './DetailPanel';
 import { defaultFilterState, type FilterState } from '../lib/filters';
-import type { CronosData, RegionId } from '../lib/dataTypes';
+import type { CronosData } from '../lib/dataTypes';
 
 const COLLAPSED_KEY = 'cronos.collapsedRegions.v1';
 
@@ -12,6 +13,7 @@ interface Props {
 
 export default function HistomapApp({ data }: Props) {
   const [filters, setFilters] = useState<FilterState>(() => defaultFilterState(data));
+  const [selected, setSelected] = useState<SelectedEntity | null>(null);
 
   const [collapsedRegions, setCollapsedRegions] = useState<Set<string>>(() => {
     if (typeof window === 'undefined') return new Set();
@@ -60,13 +62,15 @@ export default function HistomapApp({ data }: Props) {
           filters={filters}
           collapsedRegions={collapsedRegions}
           onToggleRegion={handleToggleRegion}
-          onSelect={(e) => {
-            // F9 cableará el side panel acá
-            // eslint-disable-next-line no-console
-            console.log('[cronos] entity selected', e);
-          }}
+          onSelect={(e) => setSelected(e as SelectedEntity)}
         />
       </div>
+      <DetailPanel
+        data={data}
+        selected={selected}
+        onClose={() => setSelected(null)}
+        onSelect={setSelected}
+      />
     </div>
   );
 }
