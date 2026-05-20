@@ -23,6 +23,9 @@ npm-debug.log*
 *.swp
 *.swo
 
+# Claude Code local config (per-user, no se shared)
+.claude/settings.local.json
+
 # OS
 .DS_Store
 Thumbs.db
