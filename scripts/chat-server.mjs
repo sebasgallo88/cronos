@@ -36,6 +36,11 @@ const HOST = process.env.HOST || '0.0.0.0';
 const MODEL = process.env.MODEL || 'qwen2.5:7b';
 const VOICE = process.env.VOICE || 'Sandy';
 const OLLAMA = process.env.OLLAMA_URL || 'http://localhost:11434';
+const API_TOKEN = process.env.CHAT_API_TOKEN || '';
+
+if (!API_TOKEN) {
+  console.error('[chat-server] WARN: CHAT_API_TOKEN no seteado — endpoint abierto al público sin auth!');
+}
 
 const SYSTEM_PROMPT = `Sos un historiador conciso para Cronos, un histomap interactivo de la historia humana. Respondés en español rioplatense neutro, sin emojis, sin metadiscurso, con datos verificables.
 
@@ -131,23 +136,39 @@ async function generateAudio(text) {
 
 // ─── handlers ────────────────────────────────────────────────────────────
 
+function checkAuth(req) {
+  if (!API_TOKEN) return true; // sin token configurado, pasa todo (modo dev)
+  const auth = req.headers.authorization || req.headers.Authorization || '';
+  if (auth.startsWith('Bearer ')) {
+    const t = auth.slice(7).trim();
+    // constant-time-ish compare
+    if (t.length === API_TOKEN.length && t === API_TOKEN) return true;
+  }
+  return false;
+}
+
 async function handleHealth(req, res) {
-  // Verify Ollama up
+  // health es público (no requiere auth) para que el frontend detecte
+  // si el mini está reachable antes de autenticar
   let ollamaOk = false;
   try {
     const r = await fetch(`${OLLAMA}/api/tags`, { signal: AbortSignal.timeout(2000) });
     ollamaOk = r.ok;
   } catch {}
-  jsonResponse(req, res,200, {
+  jsonResponse(req, res, 200, {
     ok: true,
     model: MODEL,
     voice: VOICE,
     ollama_reachable: ollamaOk,
+    auth_required: !!API_TOKEN,
     uptime_sec: Math.round((Date.now() - STARTED_AT) / 1000),
   });
 }
 
 async function handleAsk(req, res) {
+  if (!checkAuth(req)) {
+    return jsonResponse(req, res, 401, { error: 'unauthorized' });
+  }
   let payload;
   try {
     payload = JSON.parse(await readBody(req));

@@ -12,6 +12,15 @@ export const CHAT_API_URL =
   (typeof import.meta !== 'undefined' && (import.meta as any).env?.PUBLIC_CHAT_API_URL) ||
   'https://chat-api.sebastiangallo.com';
 
+/** Token bearer compartido entre el sitio (CF Access protege quién lo lee)
+ * y el chat-server. Se embebe en el bundle al build time vía Astro env. */
+const CHAT_API_TOKEN =
+  (typeof import.meta !== 'undefined' && (import.meta as any).env?.PUBLIC_CHAT_API_TOKEN) || '';
+
+function authHeader(): Record<string, string> {
+  return CHAT_API_TOKEN ? { Authorization: `Bearer ${CHAT_API_TOKEN}` } : {};
+}
+
 export interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
@@ -41,8 +50,6 @@ export async function checkChatHealth(signal?: AbortSignal): Promise<HealthInfo 
   try {
     const r = await fetch(`${CHAT_API_URL}/api/health`, {
       signal: signal ?? AbortSignal.timeout(3000),
-      // credentials: 'include' permite que CF Access cookies viajen al endpoint
-      credentials: 'include',
     });
     if (!r.ok) return null;
     return (await r.json()) as HealthInfo;
@@ -62,11 +69,14 @@ export async function streamAsk(
 ): Promise<void> {
   const res = await fetch(`${CHAT_API_URL}/api/ask`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'text/event-stream' },
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'text/event-stream',
+      ...authHeader(),
+    },
     body: JSON.stringify({
       messages: messages.map(({ role, content }) => ({ role, content })),
     }),
-    credentials: 'include',
     signal,
   });
 
