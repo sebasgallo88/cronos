@@ -34,7 +34,10 @@ import { tmpdir } from 'node:os';
 const PORT = Number(process.env.PORT) || 8080;
 const HOST = process.env.HOST || '0.0.0.0';
 const MODEL = process.env.MODEL || 'qwen2.5:7b';
-const VOICE = process.env.VOICE || 'Sandy';
+// Paulina (es_MX) en lugar de Sandy: Sandy tiene variantes en inglés y
+// español; say -v Sandy a veces pickea la inglesa. Paulina es es_MX
+// inequívoca (no tiene variante inglesa).
+const VOICE = process.env.VOICE || 'Paulina';
 const OLLAMA = process.env.OLLAMA_URL || 'http://localhost:11434';
 const API_TOKEN = process.env.CHAT_API_TOKEN || '';
 

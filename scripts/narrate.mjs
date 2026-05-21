@@ -47,7 +47,7 @@ const FLAGS = {
   all: argv.includes('--all'),
   overwrite: argv.includes('--overwrite'),
   ttsOnly: argv.includes('--tts-only'),
-  voice: extractFlag('--voice') || 'Sandy',
+  voice: extractFlag('--voice') || 'Paulina',
   model: extractFlag('--model') || 'qwen2.5:7b',
 };
 let CUSTOM_RANGE = null;
