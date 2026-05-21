@@ -49,15 +49,34 @@ const STARTED_AT = Date.now();
 
 // ─── helpers ─────────────────────────────────────────────────────────────
 
-const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
-  'Access-Control-Max-Age': '86400',
-};
+// Origins permitidos para credentialed requests. credentials:'include' del
+// browser requiere echo del Origin específico (no '*') y Allow-Credentials.
+const ALLOWED_ORIGINS = new Set([
+  'https://cronos.sebastiangallo.com',
+  'http://localhost:4321',
+  'http://localhost:3000',
+]);
 
-function jsonResponse(res, status, body) {
-  res.writeHead(status, { 'Content-Type': 'application/json', ...CORS_HEADERS });
+function corsHeaders(req) {
+  const origin = req.headers.origin;
+  const headers = {
+    'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Max-Age': '86400',
+    'Vary': 'Origin',
+  };
+  if (origin && ALLOWED_ORIGINS.has(origin)) {
+    headers['Access-Control-Allow-Origin'] = origin;
+    headers['Access-Control-Allow-Credentials'] = 'true';
+  } else {
+    // sin origin (curl directo) o no whitelisted: permite todo sin credentials
+    headers['Access-Control-Allow-Origin'] = '*';
+  }
+  return headers;
+}
+
+function jsonResponse(req, res, status, body) {
+  res.writeHead(status, { 'Content-Type': 'application/json', ...corsHeaders(req) });
   res.end(JSON.stringify(body));
 }
 
@@ -119,7 +138,7 @@ async function handleHealth(_req, res) {
     const r = await fetch(`${OLLAMA}/api/tags`, { signal: AbortSignal.timeout(2000) });
     ollamaOk = r.ok;
   } catch {}
-  jsonResponse(res, 200, {
+  jsonResponse(req, res,200, {
     ok: true,
     model: MODEL,
     voice: VOICE,
@@ -133,16 +152,16 @@ async function handleAsk(req, res) {
   try {
     payload = JSON.parse(await readBody(req));
   } catch (e) {
-    return jsonResponse(res, 400, { error: 'invalid JSON body' });
+    return jsonResponse(req, res,400, { error: 'invalid JSON body' });
   }
   const { messages } = payload;
   if (!Array.isArray(messages) || messages.length === 0) {
-    return jsonResponse(res, 400, { error: 'messages[] required' });
+    return jsonResponse(req, res,400, { error: 'messages[] required' });
   }
   // Validate basic shape
   for (const m of messages) {
     if (!m || typeof m.role !== 'string' || typeof m.content !== 'string') {
-      return jsonResponse(res, 400, { error: 'each message needs {role, content}' });
+      return jsonResponse(req, res,400, { error: 'each message needs {role, content}' });
     }
   }
 
@@ -152,7 +171,7 @@ async function handleAsk(req, res) {
     'Cache-Control': 'no-cache, no-transform',
     Connection: 'keep-alive',
     'X-Accel-Buffering': 'no',
-    ...CORS_HEADERS,
+    ...corsHeaders(req),
   });
   // Initial event to prime the connection
   sse(res, { type: 'opened' });
@@ -227,15 +246,15 @@ async function handleAsk(req, res) {
 
 const server = http.createServer(async (req, res) => {
   if (req.method === 'OPTIONS') {
-    res.writeHead(204, CORS_HEADERS);
+    res.writeHead(204, corsHeaders(req));
     return res.end();
   }
   if (req.url === '/api/health' && req.method === 'GET') return handleHealth(req, res);
   if (req.url === '/api/ask' && req.method === 'POST') return handleAsk(req, res);
   if (req.url === '/' || req.url === '/api') {
-    return jsonResponse(res, 200, { name: 'cronos-chat-server', version: '1.0', endpoints: ['/api/ask', '/api/health'] });
+    return jsonResponse(req, res,200, { name: 'cronos-chat-server', version: '1.0', endpoints: ['/api/ask', '/api/health'] });
   }
-  jsonResponse(res, 404, { error: 'not found' });
+  jsonResponse(req, res,404, { error: 'not found' });
 });
 
 server.listen(PORT, HOST, () => {

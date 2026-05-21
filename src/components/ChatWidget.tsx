@@ -55,7 +55,11 @@ export default function ChatWidget({ hideUntilHealthy = true }: ChatWidgetProps)
   // Cleanup on unmount
   useEffect(() => () => abortRef.current?.abort(), []);
 
-  if (hideUntilHealthy && (!healthChecked || !health?.ok)) return null;
+  // No ocultamos: mostramos un FAB siempre, en estado disabled si chat offline.
+  const chatOnline = !!health?.ok;
+  if (!healthChecked) {
+    // Mientras chequea: render disabled
+  }
 
   async function handleSend() {
     const q = input.trim();
@@ -126,9 +130,16 @@ export default function ChatWidget({ hideUntilHealthy = true }: ChatWidgetProps)
   return (
     <>
       {!open && (
-        <button className="chat-fab" onClick={() => setOpen(true)} aria-label="Abrir chat con Cronos">
-          <span className="chat-fab-icon">💬</span>
-          <span className="chat-fab-text">Preguntale a Cronos</span>
+        <button
+          className={`chat-fab ${chatOnline ? '' : 'chat-fab-offline'}`}
+          onClick={() => setOpen(true)}
+          aria-label={chatOnline ? 'Abrir chat con Cronos' : 'Chat offline'}
+          title={chatOnline ? '' : 'Chat offline — el Mac mini no responde'}
+        >
+          <span className="chat-fab-icon">{chatOnline ? '💬' : '⚪'}</span>
+          <span className="chat-fab-text">
+            {chatOnline ? 'Preguntale a Cronos' : healthChecked ? 'Chat offline' : 'Conectando…'}
+          </span>
         </button>
       )}
 
@@ -152,7 +163,12 @@ export default function ChatWidget({ hideUntilHealthy = true }: ChatWidgetProps)
           </header>
 
           <div className="chat-messages" ref={scrollRef}>
-            {messages.length === 0 && !streaming && (
+            {!chatOnline && healthChecked && (
+              <div className="chat-error">
+                ⚠ Chat offline. El servidor del Mac mini no responde a <code>{CHAT_API_URL}</code>. Verificá que esté prendido y con el tunnel activo.
+              </div>
+            )}
+            {messages.length === 0 && !streaming && chatOnline && (
               <div className="chat-empty">
                 <p>
                   Preguntale lo que quieras sobre la historia humana. Ej:
