@@ -66,7 +66,7 @@ function corsHeaders(req) {
   const origin = req.headers.origin;
   const headers = {
     'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization, Accept',
     'Access-Control-Max-Age': '86400',
     'Vary': 'Origin',
   };
