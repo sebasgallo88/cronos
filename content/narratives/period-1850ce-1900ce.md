@@ -5,10 +5,10 @@ label: Modernidad industrial
 start_year: 1850
 end_year: 1900
 audio_url: /narratives/audio/period-1850ce-1900ce.mp3
-audio_duration_sec: 295
-audio_voice: Sandy
-audio_word_count: 658
-generated_at: '2026-05-20'
+audio_duration_sec: 256
+audio_voice: Paulina
+audio_word_count: 572
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -31,32 +31,32 @@ sources_used:
 
 ## Al inicio del período
 
-En el año 1850 CE, la Tierra estaba dividida entre imperios y reinos que habían resistido a lo largo de siglos, cada uno con su propio sistema político y religioso. En Europa, el Reino Unido y Rusia se perfilaban como potencias emergentes, mientras que el Imperio Otomano mantenía su vasto dominio en el Medio Oriente. A lo largo del continente africano subsahariano, imperios locales como Benín y Kongo mantenían sus tradiciones y poder; sin embargo, la influencia hispana del Imperio Español aún se extendía a través de vastas colonias.
+En el año 1850 CE, la Tierra era un escenario diverso de imperios, religiones y culturas en constante evolución. En Europa, el Reino Unido y Rusia dominaban vastos territorios con sus respectivos sistemas monárquicos. A lo largo del África Subsahariana, el Imperio Benín prosperaba bajo su soberano, mientras que al este de Asia, la Dinastía Qing mantenía un control firme sobre China. En el sur de Asia, el Imperio Mogol se preparaba para su declive, pero aún ejercía influencia significativa.
 
-Las religiones predominantes incluían el Judaísmo, el Cristianismo, el Islam, y las tradiciones indígenas que variaban según los lugares. El Budismo, el Confucianismo, el Daoísmo, el Zoroastrismo y el Jainismo también mantenían su presencia en diferentes regiones del mundo.
+Las religiones predominantes eran una mezcla diversa: el Judaísmo, el Cristianismo, el Islam y las tradiciones indígenas coexistían con el Hinduismo, el Budismo y el Zoroastrismo. Cada región tenía sus propias prácticas religiosas y creencias que moldeaban la sociedad y la política local.
 
 ## Eventos y transiciones pivotales
 
-En este decenio crucial, las dinámicas geopolíticas se volvieron más intensas. La Rebelión Taiping en 1850 CE en China representó un intento de transformar la sociedad china a través de una combinación de cristianismo y tradiciones confucianas. Esta guerra civil fue devastadora, con cientos de miles de muertes.
+Durante estos 50 años, el mapa geopolítico experimentó cambios significativos. La rebelión Taiping en China (1850 CE) marcó un conflicto civil devastador que desestabilizó temporalmente a la Dinastía Qing. Simultáneamente, en Japón, la Apertura Forzada de 1853 CE trajo consigo el fin del Shogunato Tokugawa y el comienzo de una nueva era moderna bajo el Imperio japonés.
 
-En 1853 CE, el Shogunato Tokugawa de Japón se vio forzado a abrir sus puertas ante la amenaza americana, marcando el comienzo del periodo Meiji y un cambio drástico en la política exterior japonesa. Por su parte, la Rebelión India de 1857 CE fue un intento de resistencia contra la dominación británica que terminó con la caída del Imperio Mogol.
+En el sur de Asia, la Rebelión India de 1857 CE fue un intento fallido de liberación contra el dominio británico. Mientras tanto, en África Subsahariana, el Imperio Benín sufría las consecuencias de la invasión europea y la pérdida de autonomía.
 
-Estos eventos se interconectaron para cambiar el curso de las civilizaciones involucradas. Mientras que en Europa, el Reino Unido y Rusia continuaban su expansión imperial, en Asia y África, las luchas internas y externas pusieron a prueba la estabilidad de los imperios existentes.
+Figuras notables como Mahatma Gandhi, nacido en 1869 CE, comenzaban a tomar forma, aunque no se encuentran en la data proporcionada. Sus principios de resistencia pacífica presagiarían movimientos futuros que cambiarían el curso de la historia.
 
 ## Al cerrar el período
 
-Al final del período, varios cambios habían quedado marcados. En Europa, el Reino Unido se perfilaba como una potencia global dominante, mientras que Rusia continuaba su expansión hacia Asia y Europa Oriental. El Imperio Otomano, aunque aún grande, mostraba signos de debilidad.
+Al final del período, las estructuras políticas y religiosas habían experimentado cambios significativos. En Europa, el Reino Unido se mantenía firme, mientras que Rusia entraba en una etapa de expansión imperialista. En África Subsahariana, el Imperio Benín había caído ante la presión europea. La Dinastía Qing en China luchaba por mantener su poder, y el Imperio Mogol se desintegraba.
 
-En la región asiática, los Imperios Español, Mogol y Tokugawa habían caído o entrado en una fase de transición. La Rebelión Taiping había dejado a China profundamente dividida, mientras que el Shogunato Tokugawa abría las puertas al cambio con el inicio del periodo Meiji.
-
-En África subsahariana, la caída del Reino de Benín y Joseon marcaba un punto final para imperios locales, aunque el Imperio Español aún mantenía sus colonias. La rebelión indígena en América Latina contra el dominio español comenzaba a tomar forma, con repercusiones que se harían sentir en los años venideros.
+En el sur de Asia, el Shogunato Tokugawa había sido reemplazado por el Imperio japonés, que comenzaba a abrirse al mundo occidental. En tanto, la rebelión Taiping en China había dejado un legado de caos y reforma.
 
 ## Mientras tanto en otras regiones
 
-En las Américas, mientras Europa y Asia entraban en estos momentos cruciales, una nueva era de cambio se perfilaba. Las rebeliones indígenas contra el dominio español y británico comenzaban a tomar forma, con figuras como Simón Bolívar emergiendo como líderes en la lucha por la independencia. La resistencia indígena no solo marcó un enfrentamiento cultural sino también una guerra de liberación que cambiaría el mapa político de América Latina.
+Mientras Europa y Asia experimentaban cambios drásticos, otros continentes también estaban inmersos en su propia dinámica histórica. En América del Sur, el Imperio Inca se desmoronaba bajo la presión colonial española, dejando un legado cultural que persistiría a través de las décadas siguientes.
 
-En la región del Sudeste Asiático, imperios como el de Siam (Tailandia actual) y el Imperio Chino Imperial comenzaban a reorganizarse en respuesta al impacto europeo. Las dinámicas entre estas potencias locales y las influencias coloniales se volvían cada vez más complejas.
+En África Subsahariana, además de Benín, otros reinos como el Reino del Kongo y varios estados tribales luchaban por mantener su independencia frente al avance europeo. Las exploraciones y colonizaciones occidentales estaban alterando la geografía política y cultural de todo el continente.
 
-En África, la expansión europea de imperios como el Reino Unido y Francia no solo estaba cambiando las estructuras políticas existentes sino que también estaba redefiniendo los límites geográficos y culturales. Mientras que en África subsahariana, la caída del Reino de Benín y Joseon representaba un final para imperios locales, el inicio de una era colonial que se prolongaría por décadas.
+En América Central y Méjico, el Imperio Azteca había caído a manos de los conquistadores españoles en 1521 CE, pero su influencia cultural perduraba. Las dinastías mayas y toltecas también se encontraban bajo amenaza, con la llegada de los europeos marcando el fin de sus civilizaciones.
 
-Esta visión global nos permite ver cómo los cambios en una región podían tener implicaciones a nivel mundial. La interconexión entre los eventos en Europa, Asia y América Latina reflejaba la creciente interdependencia del mundo en el siglo XIX, poniendo las bases para los desarrollos geopolíticos de los siglos venideros.
+En el Sudeste Asiático, imperios como el Khmer y el Javanés luchaban por conservar su autonomía frente a las influencias coloniales, mientras que en el Medio Oriente, el Imperio Otomano buscaba mantener su control sobre regiones extensas.
+
+Esta visión global revela un mundo en constante transformación, con conflictos y cambios que se extendían más allá de las fronteras europeas e iberoamericanas, reflejando una historia multifacética y desigual.

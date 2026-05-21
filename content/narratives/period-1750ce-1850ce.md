@@ -5,10 +5,10 @@ label: Revoluciones
 start_year: 1750
 end_year: 1850
 audio_url: /narratives/audio/period-1750ce-1850ce.mp3
-audio_duration_sec: 263
-audio_voice: Sandy
-audio_word_count: 575
-generated_at: '2026-05-20'
+audio_duration_sec: 202
+audio_voice: Paulina
+audio_word_count: 461
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -37,28 +37,26 @@ sources_used:
 
 ## Al inicio del período
 
-En el año 1750 CE, la Tierra era un lugar de vastas imperios y reinos que se extendían desde los confines del Ártico hasta el sur de la India. En Europa, el Sacro Imperio Romano Germánico aún dominaba, aunque su poder se debilitaba, mientras que la dinastía Qing consolidaba su control sobre China, extendiendo su influencia a través de políticas comerciales y culturales. En el continente africano, los reinos de Benín y Kongo prosperaban, con riqueza y sofisticación que atrajeron la atención de exploradores europeos. Mientras tanto, en América del Sur, el Imperio Español se encontraba en su apogeo colonial.
+En el año 1750, la Tierra estaba dividida entre civilizaciones de larga data y recién emergentes. Europa se encontraba dominada por potencias como el Reino Unido, Francia, y el Sacro Imperio Romano Germánico, mientras que en Asia, imperios como el Otomano y Mogol sostenían sus vastos territorios. En América del Sur, el Imperio Español impregnaba su influencia a través de conquistas e imposiciones coloniales.
 
-En cuanto a las religiones, el cristianismo había ganado terreno en Europa y América, mientras el islam se expandía a través del Imperio Otomano en el Medio Oriente. El budismo y el hinduismo persistían en Asia, con el confucianismo y daoísmo predominando en China e influenciando profundamente la sociedad y política local.
+Religiosamente, la diversidad era evidente. El Cristianismo dominaba en Europa, con variantes como el Catolicismo y Protestanteismo. En Asia, el Budismo y el Confucianismo eran fundamentales para las sociedades orientales, mientras que en el subcontinente indio, el Hinduismo y el Islam compartían espacio. Las religiones indígenas persistían en América del Sur.
 
 ## Eventos y transiciones pivotales
 
-Durante los 100 años que abarca este período, un sinfín de eventos transformadores remodelaron el panorama político y social. En 1757, la victoria británica en la Batalla de Plassey marcó el comienzo del dominio colonial británico en la India. Esta batalla fue un punto de inflexión crucial que sentó las bases para la expansión imperial británica en Asia.
+Durante los 100 años que siguieron, Europa experimentó una serie de eventos cruciales. La Revolución Francesa en 1789 trastocó la monarquía absolutista, dando paso a un período de revoluciones y cambios sociales. Simultáneamente, el Imperio Británico se expandía globalmente, consolidando su dominio marítimo con victorias militares como la Batalla de Plassey en 1757.
 
-En Europa, 1789 vio estallar la Revolución Francesa, un evento que desencadenaría una serie de cambios revolucionarios a través del continente. Este conflicto no solo cambió el curso de la historia francesa, sino también de toda Europa y América, al impulsar ideales como la libertad y la igualdad.
-
-Mientras tanto, en el Reino Unido, Cixi emergía como una figura poderosa, consolidando su influencia en la dinastía Qing. Su reinado, aunque aún no había comenzado, prometía ser un punto de inflexión en la historia china.
+En Asia, el siglo XVIII vio la consolidación del Reino de Benín y el Imperio Ruso. Sin embargo, las tensiones internas y externas comenzaron a desgastar estas potencias. El Imperio Mogol se debilitaba gradualmente, mientras que el Shogunato Tokugawa en Japón buscaba mantener su cierre a la isla.
 
 ## Al cerrar el período
 
-Al final del siglo XVIII, Europa y Asia estaban en momentos cruciales de transformación. La Revolución Francesa había dejado una marca indeleble en la política y la sociedad europeas, al tiempo que la dinastía Qing se preparaba para un reinado que cambiaría drásticamente China. En América del Sur, el Imperio Español entró en declive mientras los esbozos de independencia comenzaban a tomar forma.
+Al final del siglo XIX, Europa y América del Norte estaban inmersos en cambios revolucionarios. La Revolución Francesa había sembrado las semillas de la democracia y los derechos humanos, mientras que la industrialización transformaba sociedades enteras. En Asia, el Imperio Ruso se expandía hacia el este, entrando en conflicto con potencias como Japón.
 
-En contraste, África subsahariana veía cambios menos dramáticos pero igualmente importantes. El Reino de Benín y el Reino del Kongo mantenían su estabilidad, aunque las incursiones comerciales europeas amenazaban sus tradiciones y estructuras sociales.
+En el mundo islámico, el Imperio Otomano enfrentaba dificultades para mantener su hegemonía. La dinastía Qing en China buscaba modernizarse, pero luchaba contra la presión exterior y la corrupción interna. En América del Sur, la independencia de Estados Unidos en 1776 inspiró movimientos similiares a lo largo de la región.
 
 ## Mientras tanto en otras regiones
 
-En América del Norte, la Declaración de Independencia de los Estados Unidos en 1776 marcó el inicio de una nueva era política. Los colonos americanos, inspirados por ideas revolucionarias, establecieron un nuevo sistema basado en principios de libertad y democracia que contrastaba con las monarquías tradicionales del Viejo Mundo.
+En África subsahariana, el Reino del Kongo se encontraba en un punto crítico, luchando contra las invasiones y la expansión colonial. En el subcontinente indio, el Imperio Mogol entró en declive mientras que emergían movimientos nacionalistas y religiosos como el Islam de los Pashtun.
 
-En la América tropical, el Imperio Español se enfrentaba a una creciente resistencia indígena. Las Guerras del Opio en 1839, aunque principalmente entre China e Inglaterra, tenían implicaciones globales que afectaban la economía y política de varias regiones. Mientras tanto, en el Sudeste Asiático, el Shogunato Tokugawa buscaba mantener su poder a pesar de las presiones externas.
+En Asia, Japón se preparaba para una revolución completa con el Shogunato Tokugawa dando paso a la modernización. En América del Sur, el Reino de Benín había caído ante las invasiones europeas, mientras que el Imperio Español luchaba por mantener su control en un mundo cada vez más globalizado.
 
-Esta visión global refleja cómo los eventos en un área específica no se desarrollan en vacío, sino que están estrechamente conectados con acontecimientos en otros continentes. La interconexión entre Europa, Asia, África y América ilustra la complejidad de los cambios políticos y sociales del siglo XVIII, marcando el inicio de un nuevo capítulo en la historia humana.
+Esta era una época de cambios drásticos y tensiones internacionales, donde el equilibrio del poder se removía constantemente, dando paso a nuevas formas de organización política y social.

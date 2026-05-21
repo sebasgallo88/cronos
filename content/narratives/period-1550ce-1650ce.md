@@ -5,10 +5,10 @@ label: Imperios coloniales y Reforma
 start_year: 1550
 end_year: 1650
 audio_url: /narratives/audio/period-1550ce-1650ce.mp3
-audio_duration_sec: 291
-audio_voice: Sandy
-audio_word_count: 615
-generated_at: '2026-05-20'
+audio_duration_sec: 267
+audio_voice: Paulina
+audio_word_count: 567
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -58,34 +58,26 @@ sources_used:
 
 ## Al inicio del período
 
-En el año 1550 CE, la Tierra estaba dividida entre una serie de poderosas civilizaciones que mantenían sus tronos a través siglos. En el continente americano, la Cultura Mississippiana de Cahokia y el Imperio Inca destacaban con sus complejas sociedades y estructuras políticas. Europa se hallaba bajo la influencia del Sacro Imperio Romano Germánico, mientras que Francia y el Reino de Inglaterra emergían como naciones unificadas. En África subsahariana, el Imperio de Malí y el Reino de Benín dominaban las rutas comerciales transcontinentales.
+1550 CE marca un momento crucial en el panorama global, donde civilizaciones y religiones de diversas regiones convergen en distintas formas. En América, la Cahokia Mississippiana continúa su influencia cultural a pesar de sus tiempos decrecientes; mientras tanto, en las Américas del Sur, el Imperio Inca aún se fortalece bajo el liderazgo de los Incas. Europa ve al Sacro Imperio Romano Germánico y la Reina de Francia lidiando con conflictos internos, mientras que en África Subsahariana, el Imperio de Malí y el Reino del Kongo se consolidan como potencias locales.
 
-Las religiones predominantes incluían el Judaísmo, el Islam, el Cristianismo, el Budismo y el Confucianismo, entre otros. El Zoroastrismo y el Jainismo mantenían su presencia en regiones más específicas, mientras que las religiones indígenas persistían en América del Norte.
+Religiosamente, el Cristianismo continúa su expansión, especialmente a través de la Iglesia Católica, mientras que el Islam se fortalece en el Imperio Otomano. El Budismo mantiene su influencia en el sudeste asiático y el Confucianismo persiste como ideología dominante en el Reino de China. En este período, las tradiciones religiosas indígenas continúan siendo practicadas en diversas formas.
 
 ## Eventos y transiciones pivotales
 
-Durante los primeros cien años del período, la historia se marcó por una serie de eventos cruciales. La Paz de Augsburgo en 1555 CE estableció el principio de tolerancia religiosa entre las sectas protestantes y católicas en Europa, dando paso a un nuevo equilibrio político. En 1571 CE, la Batalla de Lepanto vio cómo las fuerzas cristianas derrotaron al Imperio Otomano, salvando Venecia del dominio otomano.
+Durante los primeros cien años del siglo XVI, Europa experimenta una serie de eventos cruciales. En 1555 CE, la Paz de Augsburgo establece el principio de tolerancia religiosa entre protestantes y católicos en Alemania, marcando un hito en la relación entre religión y política. La Batalla de Lepanto (1571 CE) vio a las fuerzas cristianas derrotar a los otomanos, preservando el control europeo del Mediterráneo.
 
-En el continente americano, los europeos iniciaban sus colonizaciones, con la fundación del Shogunato Tokugawa en Japón y la caída del Imperio Inca en 1572 CE. En África subsahariana, el Imperio Songhai se debilitaba, mientras que el Reino de Benín continuaba su expansión.
-
-Figuras como Naresuan de Ayutthaya y Ahmed Baba de Tombuctú destacaron por sus contribuciones a la política y el pensamiento filosófico respectivamente. En Europa, William Shakespeare y Luis XIV marcaron momentos cruciales en la literatura y la monarquía absoluta.
+En América, la caída del Imperio Inca (1572 CE) y la fundación del Shogunato Tokugawa en Japón (1603 CE) representan cambios drásticos. En África Subsahariana, el Imperio Songhai se desintegra, mientras que el Reino de Benín prospera bajo la liderazgo de figuras como Nzinga Mbande. En el sudeste asiático, la publicación del Don Quijote (1605 CE) y la construcción del Taj Mahal (1632 CE) son hitos culturales significativos.
 
 ## Al cerrar el período
 
-A finales del siglo XVI y principios del XVII, Europa estaba más unificada que nunca, con la consolidación de naciones como Francia y el Reino Unido. El Imperio Otomano continuaba su expansión en Oriente Medio. En Asia, el Shogunato Tokugawa y la Dinastía Qing se establecían como nuevas potencias.
+A finales de 1650 CE, Europa continúa dominando la escena global a pesar de los cambios internos. El Sacro Imperio Romano Germánico y el Reino de Francia se consolidan en sus respectivos territorios, mientras que el Imperio Otomano mantiene su expansión territorial. En América, la fundación del Shogunato Tokugawa marca un período de aislamiento japonés.
 
-Mientras que las civilizaciones indígenas americanas como Cahokia habían desaparecido, el Reino de Ayutthaya y el Imperio Mogol permanecían sólidos. En África subsahariana, el Reino del Kongo y el Imperio de Malí también mantenían su influencia.
-
-La ciencia experimentaba un auge con descubrimientos como la perfeccionación del telescopio por Galileo en 1609 CE, mientras que eventos culturales como la publicación del Don Quijote marcaban el inicio de una era literaria rica y diversa.
+Religiosamente, el Cristianismo y el Islam continúan siendo las principales fuerzas, aunque el Budismo y otras religiones persisten en sus regiones respectivas. El panorama político global muestra una mezcla de estabilidad y tensión, con figuras notables como William Shakespeare en Inglaterra e Isaac Newton en Europa contribuyendo a la evolución cultural.
 
 ## Mientras tanto en otras regiones
 
-En Asia, el panorama político estaba cambiando con la consolidación del Shogunato Tokugawa y la Dinastía Qing. Japón se retiraba de la internacionalización con la política sakoku, mientras que China expandía su influencia a través de la construcción monumental del Taj Mahal en 1632 CE.
+En el sudeste asiático, la Dinastía Ming cae (1644 CE) para dar paso al dominio Qing, que introduce cambios significativos en la política y la cultura local. En África Subsahariana, figuras como Ahmed Baba de Tombuctú (1556-1627 CE) continúan promoviendo el conocimiento y la filosofía, mientras que el Imperio Mogol se expande bajo la liderazgo de Shah Jahan. En América del Sur, el Imperio Songhai cae al vacío, dejando un vacío político en África Subsahariana.
 
-En África subsahariana, el Imperio Mogol en India continuaba su expansión cultural y militar. El Reino del Kongo se mantenía fuerte bajo la liderazgo de Reina Nzinga Mbande, mientras que el Imperio de Malí comenzaba a declinar.
+La región de las estepas y Asia Central ve cambios dinámicos con movimientos nomádicos como los Oirats y Dzungares luchando por el control. En América, la fundación del Reino de Ayutthaya (1351-1767 CE) se fortalece, mientras que en el sudeste asiático, el Imperio Inca desaparece para dar paso a nuevas dinastías y culturas emergentes.
 
-En las Américas, la colonización europea proseguía con eventos como la fundación del Mayflower Compact en 1620 CE. Las civilizaciones indígenas se enfrentaban a nuevas dinámicas, mientras que los colonos establecían nuevas sociedades y leyes.
-
-La estepa y el Sudeste Asiático eran escenarios de cambios menos visibles pero igualmente importantes. En la estepa, las dinastías mongolas seguían sus caminos de expansión cultural y militar. En el Sudeste Asiático, figuras como Miyamoto Musashi y Matsuo Bashō dejaban su huella en el arte y la filosofía.
-
-En resumen, mientras Europa y Asia experimentaban cambios significativos en sus estructuras políticas y sociales, África subsahariana, América del Norte y los otros continentes también estaban inmersos en procesos de transformación que marcarían el futuro global.
+Este período global demuestra una diversidad sorprendente de eventos y cambios, desde batallas militares cruciales hasta la fundación de imperios y la caída de otros, reflejando un mundo en constante evolución.

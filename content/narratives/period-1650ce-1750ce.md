@@ -5,10 +5,10 @@ label: Absolutismos e Ilustración temprana
 start_year: 1650
 end_year: 1750
 audio_url: /narratives/audio/period-1650ce-1750ce.mp3
-audio_duration_sec: 249
-audio_voice: Sandy
-audio_word_count: 557
-generated_at: '2026-05-20'
+audio_duration_sec: 315
+audio_voice: Paulina
+audio_word_count: 708
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -39,30 +39,32 @@ sources_used:
 
 ## Al inicio del período
 
-En 1650 CE, el mundo se encontraba dividido entre diversas civilizaciones y dinastías que mantenían su influencia a través de siglos. En Europa, el Sacro Imperio Romano Germánico y los Reinos de Francia y Inglaterra dominaban vastas extensiones. Más al sur, el Imperio Otomano se expandía en el Medio Oriente, mientras que en África subsahariana, el Imperio de Malí y el Reino del Kongo mantenían su poder. En Asia, el Imperio Español y el Imperio Mogol gobernaban amplias regiones, con la Dinastía Qing emergiendo como una potencia ascendente en este continente.
+En el año 1650 CE, la Tierra era un mosaico de imperios y reinos que rastreaban sus raíces hasta los siglos pasados. En Europa, el Sacro Imperio Romano Germánico y el Reino de Francia mantenían su influencia, aunque las divisiones internas amenazaban con erosionar la unidad del primero. El Reino de Inglaterra se perfilaba como una fuerza emergente, uniendo escoces y inglés en 1707. En África subsahariana, el Imperio de Malí había declinado, dejando a reinos como Benín y Kongo en la cumbre del poder. El Reino de Ayutthaya en Sudeste Asiático prosperaba mientras que en el Este Asiático, Joseon se consolidaba después de una guerra civil. El Imperio Español se expandía con feroces conquistas en América, mientras que el Imperio Mogol reforzaba su autoridad sobre gran parte del subcontinente indio.
 
-En cuanto a las religiones, el cristianismo se encontraba en pleno renacimiento, mientras que el islam, el hinduismo y el budismo también mantenían su influencia. Las civilizaciones indígenas de América del Sur persistían con sus propias creencias y prácticas espirituales.
+Religiosamente, el cristianismo y el islam dominaban amplias zonas, aunque los hindúes, budistas y jainistas mantenían sus practicas ancestrales en regiones de Asia. El judaísmo y las religiones indígenas se mantenían vigentes, a pesar de la expansión cristiana.
 
 ## Eventos y transiciones pivotales
 
-Durante los siglos XVII y XVIII, se produjeron numerosos eventos que marcaron el destino de diversas civilizaciones. En Europa, la fundación de San Petersburgo en 1703 CE por Pedro I el Grande del Reino de Rusia marcó un hito en la expansión imperial rusa. La Acta de Unión de 1707 CE entre Inglaterra y Escocia consolidó aún más el poder británico, poniendo fin a una era de guerras internas.
+Durante el siglo XVII, Europa experimentó un período dinámico marcado por cambios políticos, culturales e intelectuales. En 1687 CE, Isaac Newton publicó "Los Principia", sentando las bases de la física moderna. Simultáneamente, Pedro I el Grande fundaba San Petersburgo en 1703 CE, transformando el mapa geopolítico ruso y extendiendo la influencia rusa hacia Europa del Norte.
 
-En Asia, el Imperio Mogol experimentaba su apogeo bajo Aurangzeb hasta su caída gradual. El Imperio Español, que había dominado América del Sur y Centroamérica desde 1492 CE, enfrentaba crecientes resistencias indígenas y presiones internacionales.
+En la India, el Imperio Mogol se fortaleció bajo Aurangzeb a principios de siglo, pero las tensiones internas comenzaron a debilitar su poder. En 1707 CE, la unión entre Inglaterra y Escocia creó una nación más grande e influyente en el continente europeo.
 
-En África subsahariana, el Reino de Benín prosperaba mientras el Imperio de Malí se encontraba en declive. En este mismo período, la Dinastía Qing de China asumía un papel cada vez más dominante en Asia Oriental.
+En África subsahariana, el Reino de Benín prosperaba mientras que el Imperio de Malí había declinado a principios del siglo XVII. El Reino del Kongo mantenía su unidad política y cultural, aunque enfrentaba amenazas internas. Por otro lado, Joseon en Corea experimentaba un período de estabilidad y expansión cultural.
 
 ## Al cerrar el período
 
-A finales del siglo XVIII, Europa y América experimentaban profundas transformaciones. El Reino Unido consolidaba su poder a través de las uniones británicas y la expansión imperial británica. Rusia se expandía bajo Pedro I el Grande, quien modernizó y centralizó el gobierno. En Asia, el Imperio Mogol se debilitaba mientras que la Dinastía Qing asumía un papel cada vez más dominante en China.
+A finales del siglo XVIII, Europa se encontraba en plena transición hacia la modernidad. El Imperio Ruso había fortalecido su autoridad bajo Peter el Grande, mientras que el Reino Unido emergía como una potencia global tras la unificación con Escocia. El Sacro Imperio Romano Germánico, aunque still in existence, luchaba contra las fuerzas de la modernidad y la centralización del poder.
 
-En África subsahariana, el Reino del Kongo perduraba, aunque enfrentaba presiones internas y externas. El Imperio Otomano mantenía su influencia en el Medio Oriente y Europa Oriental, pero mostraba signos de declive.
+En América, el Imperio Español se expandía aún más, aunque sus conquistas estaban empezando a generar resistencia indígena y colonial. En Asia, el Shogunato Tokugawa en Japón reforzaba su dominio, mientras que la Dinastía Qing mantenía su poder sobre China.
+
+En África subsahariana, el Reino de Benín prosperaba y el Kongo se preparaba para enfrentar las amenazas externas. En el Este Asiático, Joseon se mantenía estable, aunque sus relaciones con los países vecinos estaban en constante evolución. El Imperio Mogol, debilitado por la muerte del último gran imperador Aurangzeb a principios de siglo, comenzaba su declive.
 
 ## Mientras tanto en otras regiones
 
-Mientras los eventos en Europa y Asia capturaban la atención, América del Sur y Centroamérica experimentaban una era de cambios significativos. La resistencia indígena a la dominación española se intensificaba, con movimientos como el de Tupac Amaru en el Perú mostrando un creciente descontento. En el norte de América del Norte, las colonias británicas se preparaban para declarar su independencia y formar lo que eventualmente se convertiría en los Estados Unidos.
+Mientras Europa y Asia experimentaban cambios geopolíticos y culturales intensos, el resto del mundo no quedaba ajeno a estos movimientos. En América, la conquista española había llevado a una mezcla de civilizaciones indígenas con influencias europeas, dando lugar a sociedades hibridas que intentaban mantener sus identidades ancestrales mientras se adaptaban al nuevo orden. El desarrollo del encomienda y la repartimiento generaba conflictos internos y tensiones entre los colonizadores y los nativos.
 
-En África subsahariana, el comercio de esclavos continuaba siendo un factor crucial, afectando a múltiples reinos y empires. El Reino de Benín mantenía su influencia cultural mientras enfrentaba las presiones internas y externas.
+En el continente africano, las dinastías como Benín y Kongo no solo enfrentaban amenazas internas por la corrupción y la desunión, sino también presiones externas de conquistas europeas y africanas. Las rutas del comercio transatlántico estaban tomando forma, con ramificaciones que eventualmente llevarían a un período de esclavitud masiva.
 
-La estepa central del Asia Central veía la formación de imperios como el de los Zungar, que se expandían bajo la dinastía Qing. En el este de África, el Shengana dominaba, aunque era amenazado por el creciente poder otomano y portugués en la región.
+En el Sudeste Asiático, reinos como Ayutthaya se enfrentaban a amenazas externas, incluyendo invasiones del Imperio Mogol y tensiones internas. La influencia de China, especialmente durante la Dinastía Qing, comenzaba a extenderse sobre regiones vecinas, influyendo en su política y cultura.
 
-Esta visión global revela cómo las dinámicas regionales estaban interconectadas, aunque cada continente tenía su propio ritmo y características únicas de cambio.
+La estepa central, hogar tradicional de tribus como los mongoles y turcos, también experimentó cambios significativos con el surgimiento del Imperio Mogol y la expansión rusa. Estas dinámicas, aunque a menudo separadas geográficamente, estaban intrínsecamente conectadas en una red compleja de relaciones y conflictos que moldearían el futuro de las civilizaciones globales.

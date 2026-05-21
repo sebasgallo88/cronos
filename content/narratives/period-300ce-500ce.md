@@ -5,10 +5,10 @@ label: Cristianización y caída de Occidente
 start_year: 300
 end_year: 500
 audio_url: /narratives/audio/period-300ce-500ce.mp3
-audio_duration_sec: 305
-audio_voice: Sandy
-audio_word_count: 634
-generated_at: '2026-05-20'
+audio_duration_sec: 316
+audio_voice: Paulina
+audio_word_count: 711
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -40,30 +40,32 @@ sources_used:
 
 ## Al inicio del período
 
-En el año 300 CE, el mundo estaba dividido entre imperios y civilizaciones que abarcaban vastos territorios. La región mediterránea era dominada por el Imperio Romano, cuyas ramificaciones se extendían desde las costas de la África del norte hasta la Península Ibérica, con centros de poder en Roma y Constantinopla. Al sur, el Reino de Kush mantenía su influencia sobre el noreste de África, mientras que al este, el Imperio Sasánida sostenía su poder en las tierras del Medio Oriente. En América, la Civilización Moche florecía en lo que hoy es Perú, con una sofisticada cultura artística y agrícola.
-
-En cuanto a las religiones, el Judaísmo y el Cristianismo se habían extendido desde sus orígenes mediterráneos para convertirse en fuerzas religiosas significativas. El Hinduismo y el Budismo del sur de Asia también mantendrían su influencia, con la emergente civilización Gupta que comenzaba a consolidar su poder.
+En el año 300 CE, la faz del mundo estaba dominada por imperios y civilizaciones que habían florecido durante siglos. El Imperio Romano, a pesar de sus problemas internos, aún extendía su influencia sobre Europa Occidental y el norte de África. El Reino de Kush, en los confines del norte de África, continuaba su existencia con un sistema político complejo. A lo lejos, en el continente africano, el Imperio de Aksum emergía como una potencia regional significativa. En las tierras americanas, la Civilización Moche alcanzaba su apogeo cultural, mientras que en el Medio Oriente, el Imperio Sasánida se fortalecía. La religión predominante era un mosaico diverso: desde las tradiciones indígenas hasta el Zoroastrismo y el Budismo, pasando por el Cristianismo emergente.
 
 ## Eventos y transiciones pivotales
 
-Durante estos 200 años, las dinámicas geopolíticas fueron intensas. El Imperio Romano se debilitó gradualmente, culminando con el saqueo de Roma por los visigodos en 410 CE, un evento que marcó la caída del Imperio Romano de Occidente en 476 CE. Este período también vio la cristianización progresiva del Reino de Aksum y la fundación del Imperio Bizantino con la mudanza de Constantinopla como capital imperial en 330 CE.
+Durante este período de 200 años, los cambios fueron notables. El Imperio Romano se debilitaba gradualmente, culminando con su caída en Occidente en 476 CE. Este evento no solo marcó el fin de un imperio, sino también la transición hacia una Europa dividida y fragmentada. En paralelo, el Imperio Bizantino se consolidaba en Constantinopla, fundado en 330 CE como la nueva capital del Imperio Romano tras su división. El Reino de Kush, que había florecido desde 1070 BCE, finalmente cedió al paso del tiempo, dejando un legado cultural y político que persistiría por siglos.
 
-En el sur de Asia, el Imperio Gupta emergió como una potencia dominante, expandiendo su influencia cultural y científica. Figuras notables como Samudragupta (320-380 CE) y Aryabhata (476-550 CE) contribuyeron significativamente a la ciencia y el arte. En América, K'inich Yax K'uk' Mo' (380-437 CE) asumió un papel crucial en el desarrollo de la Civilización Maya.
+En el ámbito religioso, el Cristianismo se consolidaba como la religión oficial del Imperio Bizantino con el Edicto de Tesalónica en 380 CE. Este desarrollo influyó profundamente en las estructuras sociales y políticas de la época. Mientras tanto, el Imperio Gupta en el sur de Asia florecía, siendo una de las civilizaciones más progresistas y poderosas del mundo antiguo.
 
-Religiosamente, el Concilio de Nicea en 325 CE sentó las bases para la unidad teológica del Cristianismo, mientras que el Edicto de Milán en 313 CE legalizaba el mismo. El Edicto de Tesalónica en 380 CE oficializó al Cristianismo como religión estatal en el Imperio Bizantino.
+Figuras como Ezana de Aksum (320-360 CE) y Samudragupta (320-380 CE) jugaron roles cruciales en la expansión cultural y política de sus respectivos imperios. Kalidasa, el poeta e intelectual del Imperio Gupta, dejó un legado literario que perduró a lo largo de los siglos.
+
+En 410 CE, los visigodos llevaron a cabo el saqueo de Roma, un evento que marcó un punto de inflexión en la historia europea y rompió con las expectativas del Imperio Romano. El descubrimiento científico de Aryabhata (476-550 CE) en matemáticas e astronomía dejó una huella duradera, contribuyendo a los avances científicos futuros.
 
 ## Al cerrar el período
 
-Al final del período, los cambios habían sido significativos. El Imperio Romano había dejado atrás su gloria y desaparecido, mientras que el Imperio Bizantino emergía como una nueva potencia en la región mediterránea. En el sur de Asia, el Imperio Gupta continuaba fortaleciéndose, con figuras como Aryabhata (476-550 CE) aportando importantes avances científicos y matemáticos.
+Al finalizar este siglo y medio, la escena geopolítica se había transformado drásticamente. El Imperio Romano de Occidente había caído, dando paso a un mundo fragmentado y en constante conflicto. En contraste, el Imperio Bizantino había fortalecido su posición, extendiendo su influencia sobre la península itálica. A lo largo del Medio Oriente, el Imperio Sasánida continuaba su expansión.
 
-En América, la Civilización Maya se encontraba en su apogeo, con sitios arqueológicos como Chichen Itza demostrando un nivel de sofisticación arquitectónica y astronómica. En África subsahariana, el Imperio de Aksum había perdurado, manteniendo influencia sobre el comercio e intercambio cultural.
-
-Religiosamente, el Cristianismo se consolidaba como una fuerza dominante en gran parte del mundo mediterráneo y oriental. El Budismo y el Hinduismo persistían en Asia, con el Imperio Gupta promoviendo ambas religiones a través de su poder político e intelectual.
+En el sur de Asia, el Imperio Gupta se mantenía fuerte y progresista, mientras que en las tierras americanas, la Civilización Maya entraba en su período clásico más floreciente. La religión cristiana consolidada en el Oriente Medio estaba a punto de expandirse globalmente.
 
 ## Mientras tanto en otras regiones
 
-Mientras la historia se desarrollaba en las regiones del Medio Oriente, Europa y sur de Asia, el sudeste asiático experimentaba cambios propios. En Indochina, las dinastías como los Funan (50 BCE - 655 CE) y Dvaravati (100-1238 CE) se sucedían, influyendo en la cultura y el comercio regional con sus influencias budistas y hinduistas. En la península malaya, los imperios como Srivijaya (650-1345 CE) emergieron como centros de poder marítimo, expandiendo su influencia a través del comercio y el intercambio cultural con China y el sudeste asiático.
+Mientras Europa y el Medio Oriente se transformaban, el resto del mundo también experimentaba cambios significativos. En Asia, las dinastías Tang y Song estaban en pleno desarrollo, cada una con su propio conjunto de avances culturales e intelectuales. La civilización de la India desarrolló complejos sistemas matemáticos que contribuyeron al progreso mundial.
 
-En África, además del declive del Reino de Kush, la región experimentaba el surgimiento de otras civilizaciones. En el norte, el Imperio Bizantino expandía su influencia, mientras que en el sur, civilizaciones como los Bantu se consolidaban y expandían sus territorios a través del comercio y la agricultura.
+En el África Subsahariana, aunque el Imperio de Aksum se mantenía fuerte, emergían nuevas entidades políticas como los reinos de Mali y Songhai, que comenzaban a florecer en la región. Estos reinos eran conocidos por su rica cultura y comercio, influyendo en el comercio transáfrica.
 
-Estas dinámicas globales muestran una diversidad de procesos históricos, desde las caídas imperiales hasta las emergencias culturales y religiosas, reflejando un mundo en constante transformación.
+En las Américas, la Civilización Maya alcanzaba su apogeo cultural y político, con ciudades como Tikal y Palenque destacando como centros de poder. A lo largo de la costa occidental, los pueblos chumash mantenían sus tradiciones y sistemas sociales.
+
+En el Sudeste Asiático, imperios como Funan y Chenla se fortalecían, con una economía basada en el comercio marítimo que les permitía interactuar con otras regiones del mundo. La influencia de las religiones indígenas, el Budismo y el Confucianismo se mezclaba aquí, creando un tejido cultural único.
+
+Esta panorámica global muestra cómo los cambios en Europa y el Medio Oriente estaban interconectados con desarrollos similares o distintos en otras partes del mundo, reflejando una historia más compleja e integrada de la humanidad.

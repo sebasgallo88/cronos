@@ -5,10 +5,10 @@ label: Bisagra de eras
 start_year: -100
 end_year: 100
 audio_url: /narratives/audio/period-100bce-100ce.mp3
-audio_duration_sec: 249
-audio_voice: Sandy
-audio_word_count: 549
-generated_at: '2026-05-20'
+audio_duration_sec: 240
+audio_voice: Paulina
+audio_word_count: 523
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -37,26 +37,28 @@ sources_used:
 
 ## Al inicio del período
 
-En el año 100 BCE, la historia estaba a punto de transformarse con la emergencia y consolidación de poderosas civilizaciones que marcarían el curso del futuro. En el norte-africa, el Reino de Kush mantenía su influencia, mientras en las estepas asiáticas y europeas los Escitas se alzaban como una amenaza constante para imperios y reinos. A lo largo del Mediterráneo, el Imperio Macedonio, en su fase helénica, dominaba el escenario político con su vasto conocimiento cultural y militar.
+En el año 100 BCE, la tierra estaba dividida entre reinos y imperios que reflejaban diversas culturas y creencias. En el norte de África, el Reino de Kush mantenía su dominio desde 1070 BCE, extendiendo su influencia a través del comercio y la cultura. Mientras tanto, en las estepas asiáticas y europeas, los Escitas y el Imperio Macedonio (helenístico) gobernaban vastos territorios con sus propias leyes y costumbres.
 
-En el este-asia, la Dinastía Han consolidaba su poder, expandiéndose hacia el sur e interiorizando las culturas aledañas. Por otro lado, el Hinduismo se asentaba en la India, mientras que el Zoroastrismo florecía en Irán y partes de Asia Central. El Budismo, nacido en el siglo VI BCE, ya había comenzado su expansión hacia el sur, encontrando puertas abiertas en las ciudades-estado del antiguo Sri Lanka.
+En el Este Asiático, la Dinastía Han emergía como una de las primeras grandes potencias, expandiendo su control desde 202 BCE. Aunque otras religiones como el Judaísmo, Zoroastrismo y el Budismo existían desde épocas más remotas, cada una estaba en proceso de consolidación y expansión.
 
 ## Eventos y transiciones pivotales
 
-Durante estos 200 años, la historia se tejió con hilo de guerra y paz, fundaciones y caídas. En el año 44 BCE, la asesinato de Julio César marcó un punto de inflexión en la política romana, abriendo las puertas a una nueva era bajo Augusto, quien consolidaría la República como Imperio Romano. La Batalla de Actium (31 BCE) fue el tránsito definitivo hacia esta nueva dinastía, con Octaviano derrotando a Marco Antonio y Cleopatra VII.
+Durante los dos siglos siguientes, las dinastías y imperios se renovaron y redefinieron. El Imperio Macedonio (helenístico) experimentó su caída con la victoria de Augusto sobre Cleopatra VII en 31 BCE, marcando el comienzo del Imperio Romano en 27 BCE. Este nuevo imperio, fundado por Julio César y consolidado por Augusto, se expandió rápidamente, absorbiendo territorios y civilizaciones de todo el Mediterráneo.
 
-En el año 70 CE, la destrucción del Segundo Templo de Jerusalén por los romanos marcó un cisma profundo en el Judaísmo y propició la emergencia del Cristianismo. Mientras tanto, en el hemisferio sur, la Civilización Moche florecía en el norte del Perú, con su rica cultura artística y arquitectónica.
+En Asia Central, la caída del Imperio Xiongnu en 89 CE permitió a las tribus mongolas emergir como fuerzas dominantes. Mientras tanto, en América del Sur, la Civilización Moche florecía, dejando un legado cultural y arqueológico que continúa fascinando a los historiadores.
+
+Figuras notables como Virgilio publicaron obras importantes, como la Eneida, mientras el Cristianismo, nacido en el Medio Oriente, se extendía rápidamente. El asesinato de Julio César en 44 BCE y la crucifixión de Jesús de Nazaret en 30 CE fueron eventos que marcaron profundamente la historia y la religión.
 
 ## Al cerrar el período
 
-Al finalizar este período de 200 años, se perfilaba un mundo cambiante. El Imperio Romano había estabilizado sus fronteras, expandiéndose hacia el oeste y el norte, mientras que las raíces del Cristianismo se fortalecían en las ciudades mediterráneas. En el este-asia, la Dinastía Han continuaba su expansión, consolidando un sistema administrativo eficiente y culturalmente rico.
+Al final del período, quedaban varios imperios y civilizaciones dominantes. El Imperio Romano consolidaba su poder en todo el Mediterráneo, mientras el Reino de Kush y las tribus mongolas en Asia Central permanecían inalterados. La Dinastía Han se había extendido significativamente, creando un vasto imperio que se extendería hasta 220 CE.
 
-En contraste, el Imperio Macedonio había llegado a su fin con la caída de Cleopatra VII (30 BCE), dejando paso al Imperio Romano. El Xiongnu también se había desvanecido en las vastas estepas asiáticas, dando lugar a nuevas dinastías y confederaciones.
+La religión cristiana se había convertido en una fuerza importante, especialmente después de la Crucifixión de Jesús y la posterior llegada de Pablo, difundiendo su mensaje a través del Mediterráneo y más allá. En contraste, el Imperio Macedonio (helenístico) había desaparecido, reemplazado por el Imperio Romano.
 
 ## Mientras tanto en otras regiones
 
-En el sudeste asiático, la época de los dharmsenitas comenzaba, con la fundación del Imperio de Java (Srivijaya) en 650 CE, que se convertiría en un centro cultural y comercial importante. En América, la Civilización Moche florecía al sur de lo que hoy es Perú, mientras que en las mesetas andinas emergía la cultura Tiahuanaco, con su arquitectura monumental y organización social compleja.
+Mientras que Europa, el Medio Oriente y África del Norte se encontraban inmersos en transformaciones políticas y religiosas, la civilización de las Américas también experimentaba cambios significativos. En América Central, la Civilización Moche, con su sofisticada arquitectura y arte, florecía mientras expandía sus dominios.
 
-En el norte-africa, el Reino de Kush mantuvo su influencia cultural y política, aunque enfrentaba presiones internas y externas. En Asia Central, el Zoroastrismo se expandía, encontrando respaldo en las dinastías persas y turcas que surgen en este período.
+En el Sudeste Asiático, los imperios como el de Funan en lo que hoy es Camboya se estabilizaban, construyendo flotas comerciales y centros urbanos. La India, por su parte, veía la consolidación del Confucianismo y el Daoísmo, influencias filosóficas que continuaban expandiéndose a través de Asia.
 
-Por último, en la India, el budismo continuó su expansión hacia el sur, influenciado por la filosofía del Confucianismo y el Daoísmo, que emergían como fuerzas culturales importantes en China. Este panorama global refleja un mundo en constante evolución, donde las civilizaciones se entrelazan y transforman, creando un tejido de influencias y conflictos que definirán la historia del siglo I CE.
+En África Subsahariana, el Imperio de Aksum se preparaba para su gran ascenso en 100 CE, estableciendo relaciones comerciales con el mundo mediterráneo y más allá. Estas dinámicas reflejan una época histórica diversa e interconectada, donde las civilizaciones emergentes y desaparecidas contribuyen al tejido complejo de la historia humana.

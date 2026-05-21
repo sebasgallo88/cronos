@@ -5,10 +5,10 @@ label: Helenismo y ascenso de Roma
 start_year: -300
 end_year: -100
 audio_url: /narratives/audio/period-300bce-100bce.mp3
-audio_duration_sec: 213
-audio_voice: Sandy
-audio_word_count: 489
-generated_at: '2026-05-20'
+audio_duration_sec: 273
+audio_voice: Paulina
+audio_word_count: 622
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -40,26 +40,28 @@ sources_used:
 
 ## Al inicio del período
 
-En el año 300 BCE, la Tierra estaba dividida entre eminencias como el Reino de Kush en África, Cartago y el Imperio Macedonio en el Mediterráneo, y el Imperio Maurya en el sur de Asia. Las religiones indígenas predominaban ampliamente, pero se encontraba también un resurgir del Judaísmo, el Hinduismo, el Zoroastrismo, el Jainismo, el Budismo y el Confucianismo, cada uno con sus propias tradiciones y creencias.
+En el año -300 BCE, la Tierra se encontraba sumergida en un entrelazado de civilizaciones y religiones que moldeaban el futuro de la humanidad. En el norte-africa, el Reino de Kush prosperaba bajo una monarquía poderosa que mantenía su influencia desde las tierras del Nilo hasta los confines del Sahel. A lo largo del Mediterráneo, Cartago emergía como una potencia naval y comercial, mientras que en el este-asia se asentaba la dinastía Maurya, liderada por emperadores visionarios que promovían un imperio pacífico y progreso.
+
+En las estepas, los Escitas eran una nación nomádica cuyo poder era temido por sus habilidades en el combate a caballo. En el corazón del Mediterráneo, el Imperio Macedonio, bajo la influencia de figuras como Amílcar Barca, se preparaba para expandir su dominio. Las religiones indígenas seguían siendo omnipresentes, pero el Judaísmo, el Zoroastrismo y el Budismo habían comenzado a ganar adeptos en diversas regiones.
 
 ## Eventos y transiciones pivotales
 
-Durante los 200 años que abarca este período, se registraron cambios significativos en las dinastías y religiones. La Batalla de Kalinga en 261 BCE marcó un punto de inflexión para el Imperio Maurya bajo Asoka, quien posteriormente adoptó el Budismo. En el Mediterráneo, la derrota de Cartago por Roma en 146 BCE sentó las bases para la expansión romana y el fin del imperio cartaginés.
+Durante los doscientos años que se extienden desde -300 hasta -100 BCE, se produjeron cambios drásticos y cruciales. La Batalla de Kalinga en el año -261 BCE marcó un hito en la historia del sur-asia, donde la gran victoria de Ashoka sobre Magadha llevó a una reforma religiosa que propició la expansión del Budismo. En el norte-africa, la traducción de la Septuaginta en -250 BCE consolidó la influencia del Judaísmo en las regiones mediterráneas.
 
-En el norte de Asia, el Imperio Xiongnu se fundó en 209 BCE bajo Modu Chanyu, mientras que en el este de Asia, el Dinastía Han emergió con Liu Bang como su primer emperador. El codificador de la Bhagavad Gita en 200 BCE y la construcción inicial de la Gran Muralla china en 216 BCE también dejaron huellas duraderas.
+En el año -221 BCE, Liu Bang inició la construcción inicial de lo que se convertiría en la Gran Muralla China, una obra maestra de ingeniería y defensa. Las batallas decisivas como la de Cannas (-216 BCE) y la Batalla de Kalinga sentaron las bases para futuras expansiones imperiales. El Imperio Maurya se desmoronó en -184 BCE, dando paso a un periodo de caos que vio la ascensión del Imperio Xiongnu en las estepas (-209 BCE).
 
-Las figuras notables Amílcar Barca, Aníbal Barca, Cicerón y Julio César marcaron este periodo con su influencia política y militar. El emperador Wu de Han y Sima Qian contribuyeron significativamente a la historia y el arte respectivamente.
+En este contexto, figuras como Aníbal Barca y Modu Chanyu emergieron para liderar sus respectivas naciones. Cicerón y Julio César, con su genio político y oratoria, forjaron la República Romana en un camino que eventualmente conduciría a la caída de Cartago (-146 BCE), una pérdida que sentaría las bases del Imperio Romano.
 
 ## Al cerrar el período
 
-Al final del período en 100 BCE, las dinastías y religiones habían experimentado cambios notables. Cartago había sido derrocada por Roma, dejando un vacío que pronto sería llenado con la expansión romana. El Imperio Maurya se desintegró, dando paso a otras potencias en el subcontinente indio.
+Al final del período, la configuración geopolítica se había transformado drásticamente. El Reino de Kush y el Imperio Macedonio habían perdurado, aunque con menores extensiones territoriales. Cartago, una vez poderosa, había sucumbido a las presiones romanas. En el este-asia, la Dinastía Han se consolidaba bajo el liderazgo del Emperador Wu de Han, quien impulsó políticas que expandieron su influencia y fortalecieron la cultura china.
 
-El Imperio Xiongnu y la Dinastía Han, por otro lado, fortalecieron su poder y influencia. La Ruta de la Seda había sido formalmente abierta, promoviendo el intercambio cultural e interpersonal entre Oriente y Occidente. En cuanto a las religiones, el Budismo se extendió más allá del sur de Asia y comenzó a tener un impacto en regiones como China.
+En las estepas, el Imperio Xiongnu continuaba su expansión, mientras que en el sur-asia, el Budismo se consolidaba como una religión dominante. La Ruta de la Seda, abierta formalmente en -130 BCE, conectaba los imperios del este con Occidente, promoviendo intercambios comerciales y culturales.
 
 ## Mientras tanto en otras regiones
 
-Mientras que este período en la región mediterránea y oriental era de cambio y expansión, en América del Sur y África subsahariana se encontraba un panorama diferente. En el Sudeste Asiático, los imperios como el Funan en lo que hoy es Camboya prosperaban, mientras que en Mesoamérica las civilizaciones mesoamericanas como la de Teotihuacán alcanzaban su apogeo.
+Mientras se desarrollaban estos eventos en el Mediterráneo y el norte-africa, la América precolombina vivía sus propias dinámicas. Las civilizaciones como los aztecas, mayas e incas prosperaban con complejas sociedades basadas en el intercambio de recursos y conocimientos. En Sudamérica, las culturas charrúa y guaraní mantenían sus tradiciones y luchaban contra la invasión española.
 
-En África subsahariana, la civilización del Reino de Kush continuaba su influencia en el norte, pero se encontraba una gran diversidad cultural y política. En Sudáfrica, la cultura Bantu se expandía rápidamente, llevando consigo lenguas, religiones indígenas y sistemas políticos que aún son fundamentales hoy.
+En África sub-sahariana, reinos como Ghana y Mali florecían con rutas comerciales que conectaban el norte con el sur. El Zoroastrismo se extendía por la región mediterránea, influyendo en las creencias de los persas y algunos grupos del norte-africa.
 
-Esta visión global muestra un mundo en constante cambio y evolución, donde las dinastías y creencias del Mediterráneo y Oriente Medio estaban interconectadas pero no se isolaban de las demás regiones del planeta.
+En el sudeste asiático, reinos como Funan y Champa emergían con su propia cultura e influencia, mientras que el Confucianismo y el Daoísmo se consolidaban en China. Estas regiones, aunque a menudo ignoradas en la narrativa histórica occidental, contribuían de manera significativa al tejido global de la civilización humana.

@@ -5,10 +5,10 @@ label: Caída de Constantinopla y descubrimientos
 start_year: 1450
 end_year: 1550
 audio_url: /narratives/audio/period-1450ce-1550ce.mp3
-audio_duration_sec: 303
-audio_voice: Sandy
-audio_word_count: 678
-generated_at: '2026-05-20'
+audio_duration_sec: 279
+audio_voice: Paulina
+audio_word_count: 619
+generated_at: '2026-05-21'
 generated_by: qwen2.5:7b
 sources_used:
   polity_ids:
@@ -71,30 +71,32 @@ sources_used:
 
 ## Al inicio del período
 
-1450 CE marca el cierre de la Edad Media y el comienzo del Renacimiento, con un panorama diverso y dinámico a nivel global. En Europa, las grandes potencias como el Sacro Imperio Romano Germánico y el Reino de Francia dominaban territorios extensos. Mientras que en el Oriente Medio, el Imperio Otomano se expandía con paso firme. A lo largo del Mediterráneo, el Imperio Bizantino luchaba por su supervivencia, mientras que en América, la Cultura Mississippiana y el Imperio Azteca se alzaban como protagonistas locales. En Asia, el Imperio Ming consolidaba su poder, y en África Subsahariana, Reinos como Benín y Kongo emergían como centros comerciales y políticos de influencia.
+En el año 1450 CE, la Tierra estaba dividida entre numerosas civilizaciones y imperios que habían florecido a lo largo de siglos. En Europa, el Sacro Imperio Romano Germánico se consolidaba como una poderosa entidad política, mientras que en el oeste del continente, el Reino de Francia emergía como un reino centralizado con aspiraciones expansionistas. El imperio bizantino, aunque en declive, aún mantenía sus rutas marítimas y comerciales cruciales. En América, la Cultura Mississippiana se expandía a través del norte de lo que hoy es Estados Unidos, construyendo grandes ciudades como Cahokia.
 
-Las religiones predominantes incluían el Cristianismo, que se había extendido por Europa y América, junto con el Islam que dominaba el Oriente Medio y el Norte de África. En Asia, el Budismo y el Confucianismo mantenían su presencia en China y otros países del Este Asiático.
+En Asia, el Imperio Ming China se encontraba en su apogeo con un gran poder económico y cultural, mientras que al sur, el imperio Majapahit florecía en Indonesia. En la estepa, el Imperio Timúrida mantenía su influencia política y cultural entre los pueblos de habla persa. En África Subsahariana, el Reino de Benín progresaba en su poder territorial y artesanal, mientras que el imperio Malí se consolidaba como una potencia económica a través de sus rutas comerciales.
+
+Las principales religiones en este momento eran el cristianismo, con su corte occidental y ortodoxo, el islam, predominante en Oriente Medio y África Subsahariana, y el budismo, que aún florecía en Asia Oriental. El hinduismo, el confucianismo y otras religiones regionales también mantenían sus practicas, aunque con menor influencia global.
 
 ## Eventos y transiciones pivotales
 
-Durante los 100 años que componen este período, se produjeron eventos cruciales que transformaron el curso de la historia mundial. En Europa, la caída de Constantinopla en 1453 a manos del Imperio Otomano marcó el fin del Imperio Bizantino y el inicio de una nueva era mediterránea bajo musulmanes. A su vez, la invención de la imprenta con tipos móviles en 1455 CE revolucionó la difusión del conocimiento y la cultura europeas.
+Durante los siglos siguientes a 1450 CE, varios eventos cruciales remodelaron el panorama político y cultural de la Tierra. La caída de Constantinopla en 1453 CE marcó un punto final para el Imperio Bizantino, mientras que el descubrimiento de América por Cristóbal Colón en 1492 CE abrió una nueva era en las relaciones intercontinentales.
 
-En América, la llegada de Cristóbal Colón a las islas del Caribe en 1492 CE inició una era de descubrimiento y conquista. El Imperio Azteca cayó ante Hernán Cortés en 1521 CE, mientras que el Imperio Inca fue derrocado por Francisco Pizarro en 1532 CE. En Asia, el Imperio Majapahit se desmoronaba, dando paso al surgimiento del Imperio Español y el Imperio Mogol.
+En Europa, los tratados como el de Tordesillas (1494 CE) definieron los límites de la expansión colonial española y portuguesa. La Reforma Protestante iniciada por Martín Lutero en 1517 CE desencadenó un cisma que transformaría la religión europea, mientras que el Imperio Español se fundaba en 1492 CE, expandiéndose rápidamente a través del continente americano.
 
-Las figuras notables como Isabel I de Castilla y Afonso I del Kongo impulsaron movimientos políticos y culturales cruciales en sus respectivos reinos. En el Medio Oriente, Solimán el Magnífico consolidó el poder otomano, mientras que en el Este Asiático, Tokugawa Ieyasu iniciaba la era Edo de Japón.
+En el Asia Central y Oriente Medio, el imperio Timúrida entró en su declive, dando paso al reinado de Babur y la formación del Imperio Mogol. En África Subsahariana, el Imperio Songhai emergía como una potencia económica y política a finales del siglo XV.
+
+Figuras notables como Isabel I de Castilla, Carlos V y Solimán el Magnífico ejercieron un gran influjo en los acontecimientos políticos y religiosos. La conquista de Tenochtitlan por Hernán Cortés en 1521 CE fue un punto crucial en la historia americana, mientras que el reinado de Akbar el Grande en el Imperio Mogol desde 1540 CE marcó un período de prosperidad y tolerancia religiosa.
 
 ## Al cerrar el período
 
-1550 CE ve a Europa y el Mediterráneo enfrentados ante nuevas dinastías y conflictos. El Imperio Bizantino cayó definitivamente, mientras que el Sacro Imperio Romano Germánico y el Reino de Francia luchaban por mantener su hegemonía. En América, las conquistas españolas habían establecido un nuevo orden colonial, y en África Subsahariana, reinos como Benín y Kongo persistían, aunque con una influencia decreciente.
+Al final del siglo XVI, el panorama global se había transformado significativamente. Europa emergía como el centro de la exploración marítima y colonial, mientras que el Imperio Ming en China mantenía su influencia económica e industrial. En América, la expansión española y portuguesa había llevado a la colonización de gran parte del continente.
 
-En Asia, el Imperio Ming se desmoronaba, dando paso a la dinastía de los Manchúes que fundaría más tarde la Dinastía Qing. En el Medio Oriente, el Imperio Otomano continuaba su expansión, mientras que en el Este Asiático, el Imperio Timúrida y el Reino de Ayutthaya entraban en declive.
+En Oriente Medio, el Imperio Otomano continuaba su dominio sobre vastas regiones, mientras que la India veía la consolidación del Imperio Mogol. En África Subsahariana, el Reino de Benín y el Imperio Songhai mantenían sus influencias territoriales, aunque enfrentaban presiones coloniales.
+
+Las religiones seguían influyendo profundamente en las sociedades, con el cristianismo protestante emergiendo como una fuerza significativa en Europa, mientras que el islam continuaba expandiéndose a través de África y partes del continente asiático.
 
 ## Mientras tanto en otras regiones
 
-Mientras Europa y el Mediterráneo se enfrentaban a cambios profundos, otros continentes experimentaban transformaciones propias. En América del Sur, los reinos indígenas como Inca y Azteca habían caído ante la conquista española, pero las culturas mesoamericanas mantenían su influencia a través de prácticas religiosas y tradicionales que se adaptaban al nuevo orden colonial. En el Este Asiático, el Imperio Ming entraba en una fase de declive, con tensiones internas y conflictos externos mientras el Imperio Japonés bajo Tokugawa Ieyasu comenzaba a cerrar su sociedad a la influencia exterior.
-
-En África Subsahariana, reinos como Benín y Kongo se enfrentaban a cambios económicos y políticos derivados de las interacciones con Europa. En el Sudeste Asiático, el Imperio Majapahit desmoronándose daba paso a nuevas dinastías que intentaban mantener su influencia en un mundo cada vez más globalizado.
-
-La estepa, por su parte, veía la caída del Imperio Timúrida y el surgimiento de nuevos poderes como el Imperio Mogol. En este contexto, figuras como Babur y Akbar el Grande jugaban roles cruciales en la formación de imperios que marcarían el futuro regional.
-
-Esta visión global muestra cómo los eventos en Europa no se desarrollan en un vacío aislado, sino que están íntimamente conectados con las transformaciones ocurridas en otras partes del mundo.
+Mientras el mundo occidental experimentaba cambios drásticos e históricos, en Asia, América y África Subsahariana también se producían transformaciones significativas. En China, durante la dinastía Ming (1368-1
+<|im_start|><|im_start|>user
+Continúa la última sección, por favor.
