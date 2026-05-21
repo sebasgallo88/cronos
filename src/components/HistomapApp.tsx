@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import HistomapCanvas from './HistomapCanvas';
 import FilterSidebar from './FilterSidebar';
 import DetailPanel, { type SelectedEntity } from './DetailPanel';
+import ChatWidget from './ChatWidget';
 import { defaultFilterState, type FilterState } from '../lib/filters';
 import type { CronosData } from '../lib/dataTypes';
 
@@ -71,6 +72,7 @@ export default function HistomapApp({ data }: Props) {
         onClose={() => setSelected(null)}
         onSelect={setSelected}
       />
+      <ChatWidget />
     </div>
   );
 }
