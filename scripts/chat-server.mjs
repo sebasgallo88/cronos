@@ -131,7 +131,7 @@ async function generateAudio(text) {
 
 // ─── handlers ────────────────────────────────────────────────────────────
 
-async function handleHealth(_req, res) {
+async function handleHealth(req, res) {
   // Verify Ollama up
   let ollamaOk = false;
   try {
